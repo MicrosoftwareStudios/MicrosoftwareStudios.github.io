@@ -69,6 +69,20 @@
     border: 1px solid #ccc;
   }
 }
+ /* Style buttons */
+.btn {
+  background-color: DodgerBlue;
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: RoyalBlue;
+} 
     </style>
 	<head>
 		<title>Microsoftware - Downloads</title>
@@ -99,12 +113,17 @@
 	    <img src="pcpscr.png">
 	    <br><br>
 	    <a href="downloads/installpcp.zip">Download Beta for Linux (Online Installer)</a>
+	    <!-- Add icon library -->
+	    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	    <!-- Auto width -->
+	    <button class="btn"><i class="fa fa-download"></i> Download</button>
 	    
 	    
 	  </main>
 	  <footer>
 	    	      <div>
-		<p>(c) Microsoftware Corp. 2022. All rights reserved</p>
+		<p>(c) Microsoftware Corp. 2024. All rights reserved</p>
 	      <nav>
 		<ul>
 		    <li><a href="index.html">Home</a></li>
