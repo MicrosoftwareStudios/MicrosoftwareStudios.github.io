@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly manifestVersion="1.0" xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1">
+  <asmv1:assemblyIdentity version="1.2.0.6" name="WebSurf.exe" publicKeyToken="19549607df709445" language="neutral" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="icons8-reload-96.ico" asmv2:publisher="Microsoftware Corporation" asmv2:product="WebSurf Browser" asmv2:supportUrl="https://microsoftwarestudios.github.io/help" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="WebSurf" version="1.2.0.6" publicKeyToken="19549607DF709445" language="neutral" processorArchitecture="msil" />
+    <commandLine file="WebSurf.exe" parameters="" />
+  </entryPoint>
+  <co.v1:useManifestForTrust xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!-- UAC Manifest Options
+            If you want to change the Windows User Account Control level replace the 
+            requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+            If you want to utilize File and Registry Virtualization for backward 
+            compatibility then delete the requestedExecutionLevel node.
+        -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="2.0.50727.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="System.Core" version="3.5.0.0" publicKeyToken="b77a5c561934e089" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="System.Data.Entity" version="3.5.0.0" publicKeyToken="b77a5c561934e089" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="WindowsBase" version="3.0.0.0" publicKeyToken="31bf3856ad364e35" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="WebSurf.exe" size="509952">
+      <assemblyIdentity name="WebSurf" version="1.2.0.6" publicKeyToken="19549607DF709445" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>OlVoqrdFTMbVkzNvMdbQPLqBxyg=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="icons8-reload-96.ico" size="187959">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>r4pt6G6De+sHwBqmMXiD0ObQ+Vg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="WebSurf.exe.config" size="2365">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>rtCz2zUFHmB2Erlp5PaCewPMQbE=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=PC\Andrew Oswald" issuerKeyHash="66dfa034d9c078698701900b6d2e9de7c4eee024" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>6yL/T2ClERvox0x5wWecfcmBrb8=</DigestValue></Reference></SignedInfo><SignatureValue>NHuvZwhxOAPUlY3eJemoJh50nmV63JtijW54WK4kZg/0WJ+UT2otxWLzWEAEwD8T66LHIne7Gx/4JYGr+/L8130jUBbZ0GUgZ7+JDkjOaNv9Ef6TwvxOLoMTuSTRifO+bkcjYmkdw01bilRzWWQykhavp/ZgELp13j/y7Dd8YkY=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>wJgUPtlDyoj9LFaHDuDAE6yc07jAwpSiSRuQBiXT1zDLyInEAdWvkFT0JdHkXPKNlEUgYGWjC/XVOOfmImRxlm8Vvkhqtq+3IKjN7oEk2SZeNDtieN2vuhJFkVymoVwcBs2Ix+W3K+6gQCGcO1I/V9/OrJ8c9ilu3AvrpvwEPFk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="bfad81c97d9c67c1794cc7e81b11a5604fff22eb" Description="" Url=""><as:assemblyIdentity version="1.2.0.6" name="WebSurf.exe" publicKeyToken="19549607df709445" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=PC\Andrew Oswald</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>eVPdel5wb8dJryrKO9CaOP4b5aw=</DigestValue></Reference></SignedInfo><SignatureValue>pSZnWhxCZkzypWFmsWX7IdzeaAq9YpjnE0Eu8oY47IbH/bTLGS7cHvD6rB+gfwUaCk7jlpefxCrckBu9+qXo1lI8nyof9RQ4aJqL/yjT+NyDQOqHavqFglY/F0DSc/joGyYg0QlOgN5ECTesXDnGl21LvzJRAWN1GYw9Y1+YMIk=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>wJgUPtlDyoj9LFaHDuDAE6yc07jAwpSiSRuQBiXT1zDLyInEAdWvkFT0JdHkXPKNlEUgYGWjC/XVOOfmImRxlm8Vvkhqtq+3IKjN7oEk2SZeNDtieN2vuhJFkVymoVwcBs2Ix+W3K+6gQCGcO1I/V9/OrJ8c9ilu3AvrpvwEPFk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB2TCCAUKgAwIBAgIQFgsn657/o6NK6gj4SriUeTANBgkqhkiG9w0BAQUFADArMSkwJwYDVQQDHiAAUABDAFwAQQBuAGQAcgBlAHcAIABPAHMAdwBhAGwAZDAeFw0yNTAzMTUxNjEzMDFaFw0yNjAzMTUyMjEzMDFaMCsxKTAnBgNVBAMeIABQAEMAXABBAG4AZAByAGUAdwAgAE8AcwB3AGEAbABkMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDAmBQ+2UPKiP0sVocO4MATrJzTuMDClKJJG5AGJdPXMMvIicQB1a+QVPQl0eRc8o2URSBgZaML9dU45+YiZHGWbxW+SGq2r7cgqM3ugSTZJl40O2J43a+6EkWRXKahXBwGzYjH5bcr7qBAIZw7Uj9X386snxz2KW7cC+um/AQ8WQIDAQABMA0GCSqGSIb3DQEBBQUAA4GBALQXwqJwT9hQ4wtPLGmGfua9p/MHNk+TCMOgdoa1cpjylbDdUONLQ/JGuU30efbZsbYy3MOBMLK/NME7+SJk67r8cAD7gRlZrkIM0QOTRTa1QoQLGDUS4yqGR5WyuFnqtknmOXsGY1EZe4wnUOCkSRAx6mLoaZCbYx2hirKXRc8z</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
