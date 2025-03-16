@@ -11,6 +11,15 @@ header {
 h1 {
 	padding: 10px;
 }
+/* Style the search box inside the navigation bar */
+.topnav input[type=text] {
+  float: right;
+  padding: 6px;
+  border: none;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 17px;
+}
 p {
 	padding: 10px;
 }
@@ -97,17 +106,6 @@ nav2 ul li {
 * {
 	box-sizing: border-box;
 }
-
-/* Style the search field */
-form.example input[type=text] {
-	padding: 10px;
-	font-size: 17px;
-	border: 1px solid grey;
-	float: right;
-	width: 80%;
-	background: #f1f1f1;
-}
-
 /* Style the submit button */
 form.example button {
 	float: right;
