@@ -1,0 +1,15 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Lexica
+</name>
+  <file name="lexdoc.ico" size="171805">
+    
+  </file>
+<fileAssociation extension=".ldoc" description="Lexica Document" progid="Lexica.Document" defaultIcon="lexdoc.ico" />
+</assembly>
+<members>
+
+</members>
+</doc>
