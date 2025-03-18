@@ -1,3 +1,28 @@
 * {
   font-family: sans-serif;
 }
+p {
+  font-size: 20px;
+  padding: 10px;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+}
+.btn {
+  background-color: DodgerBlue;
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 20px;
+}   
+.btn:hover {
+  background-color: RoyalBlue;
+}
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
