@@ -65,6 +65,40 @@ span.psw {
   }
 }
 </style>
+  <script>
+   // Sign-Up Function
+   function signUp() {
+       const email = document.getElementById("signupEmail").value;
+       const password = document.getElementById("signupPassword").value;
+
+       firebase.auth().createUserWithEmailAndPassword(email, password)
+           .then((userCredential) => {
+               alert("Sign-Up Successful!");
+               console.log("User signed up:", userCredential.user);
+           })
+           .catch((error) => {
+               alert("Error: " + error.message);
+               console.error("Sign-Up Error:", error);
+           });
+   }
+
+   // Login Function
+   function login() {
+       const email = document.getElementById("loginEmail").value;
+       const password = document.getElementById("loginPassword").value;
+
+       firebase.auth().signInWithEmailAndPassword(email, password)
+           .then((userCredential) => {
+               alert("Login Successful!");
+               console.log("User logged in:", userCredential.user);
+           })
+           .catch((error) => {
+               alert("Error: " + error.message);
+               console.error("Login Error:", error);
+           });
+   }
+</script>
+
 </head>
 <body>
 
@@ -74,13 +108,13 @@ span.psw {
 
 
   <div class="container">
-    <label for="uname"><b>Username</b></label>
-    <input type="text" placeholder="Enter Username" name="uname" required>
+    <label for="loginEmail"><b>Email</b></label>
+    <input type="email" id="loginPassword" placeholder="Enter Email" name="loginEmail" required>
 
-    <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" required>
+    <label for="loginPassword"><b>Password</b></label>
+    <input type="password" id="loginPassword" placeholder="Enter Password" name="loginPassword" required>
         
-    <button type="submit">Login</button>
+    <button type="submit" onclick="login">Login</button>
     <label>
       <input type="checkbox" checked="checked" name="remember"> Remember me
     </label>
