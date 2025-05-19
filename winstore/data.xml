@@ -15,4 +15,9 @@
         <category>News</category>
         <icon>appRes/accuweather/StoreLogo.png</icon>
     </app>
+    <app>
+        <name>Xbox One Companion</name>
+        <category>Games</category>
+        <icon>appRes/xboxcompanion/StoreLogo.png</icon>
+    </app>
 </store>
