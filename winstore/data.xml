@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<store>
+    <app>
+        <name>Productivity Plus</name>
+        <category>Productivity</category>
+        <icon>icons/productivity.png</icon>
+    </app>
+    <app>
+        <name>Game Hub</name>
+        <category>Gaming</category>
+        <icon>icons/game.png</icon>
+    </app>
+    <app>
+        <name>Entertainment Zone</name>
+        <category>Entertainment</category>
+        <icon>icons/entertainment.png</icon>
+    </app>
+</store>
