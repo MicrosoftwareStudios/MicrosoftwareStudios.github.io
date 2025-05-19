@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <store>
     <app>
-        <name>Productivity Plus</name>
-        <category>Productivity</category>
-        <icon>icons/productivity.png</icon>
+        <name>Microsoft Solitaire Collection</name>
+        <category>Games</category>
+        <icon>appRes/solitaire/StoreLogo.png</icon>
     </app>
     <app>
-        <name>Game Hub</name>
-        <category>Gaming</category>
-        <icon>icons/game.png</icon>
+        <name>Microsoft Mahjong</name>
+        <category>Games</category>
+        <icon>appRes/mahjong/StoreLogo.png</icon>
     </app>
     <app>
-        <name>Entertainment Zone</name>
-        <category>Entertainment</category>
-        <icon>icons/entertainment.png</icon>
+        <name>AccuWeather for Windows 8</name>
+        <category>News</category>
+        <icon>appRes/accuweather/StoreLogo.png</icon>
     </app>
 </store>
