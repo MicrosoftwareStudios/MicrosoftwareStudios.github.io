@@ -20,4 +20,9 @@
         <category>Games</category>
         <icon>appRes/xboxcompanion/StoreLogo.png</icon>
     </app>
+    <app>
+        <name>Adobe Acrobat PDF Reader</name>
+        <category>Tools</category>
+        <icon>appRes/acrobatreader/StoreLogo.png</icon>
+    </app>
 </store>
