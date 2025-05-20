@@ -3,26 +3,26 @@
     <app>
         <name>Microsoft Solitaire Collection</name>
         <category>Games</category>
-        <icon>appRes/solitaire/StoreLogo.png</icon>
+        <icon>https://microsoftwarestudios.github.io/winstore/appRes/solitaire/StoreLogo.png</icon>
     </app>
     <app>
         <name>Microsoft Mahjong</name>
         <category>Games</category>
-        <icon>appRes/mahjong/StoreLogo.png</icon>
+        <icon>https://microsoftwarestudios.github.io/winstore/appRes/mahjong/StoreLogo.png</icon>
     </app>
     <app>
         <name>AccuWeather for Windows 8</name>
         <category>News</category>
-        <icon>appRes/accuweather/StoreLogo.png</icon>
+        <icon>https://microsoftwarestudios.github.io/winstore/appRes/accuweather/StoreLogo.png</icon>
     </app>
     <app>
         <name>Xbox One SmartGlass</name>
         <category>Games</category>
-        <icon>appRes/xboxcompanion/StoreLogo.png</icon>
+        <icon>https://microsoftwarestudios.github.io/winstore/appRes/xboxcompanion/StoreLogo.png</icon>
     </app>
     <app>
         <name>Adobe Acrobat PDF Reader</name>
         <category>Tools</category>
-        <icon>appRes/acrobatreader/StoreLogo.png</icon>
+        <icon>https://microsoftwarestudios.github.io/winstore/appRes/acrobatreader/StoreLogo.png</icon>
     </app>
 </store>
