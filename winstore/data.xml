@@ -48,7 +48,7 @@
         <icon>https://microsoftwarestudios.github.io/winstore/appRes/xboxcompanion/StoreLogo.png</icon>
         <publisher>Microsoft Corporation</publisher>
         <description></description>
-        <install>https://microsoftwarestudios.github.io/winstore/install/xboxcompanion</install>
+        <install>https://microsoftwarestudios.github.io/winstore/install/xboxcompanion.ps1</install>
     </app>
     <app>
         <name>Adobe Acrobat PDF Reader</name>
