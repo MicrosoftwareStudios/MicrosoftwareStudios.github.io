@@ -19,6 +19,14 @@
         <name>Microsoft Mahjong</name>
         <category>Games</category>
         <icon>https://microsoftwarestudios.github.io/winstore/appRes/mahjong/StoreLogo.png</icon>
+        <description>Microsoft Mahjong many different mahjong puzzles so you can wind down while earning badges. With 4 different difficulty levels, anyone with any skill level can play.</description>
+        <features>
+            <feature>Many unique puzzles</feature>
+            <feature>Medals</feature>
+            <feature>Multiple themes</feature>
+        </features>
+        <install>https://microsoftwarestudios.github.io/winstore/install/msmahjong</install>
+        <publisher>Microsoft Studios</publisher>
     </app>
     <app>
         <name>AccuWeather for Windows 8</name>
