@@ -53,21 +53,25 @@
     <app>
         <name>Adobe Acrobat PDF Reader</name>
         <category>Tools</category>
+        <publisher>Adobe Systems Inc.</publisher>
         <icon>https://microsoftwarestudios.github.io/winstore/appRes/acrobatreader/StoreLogo.png</icon>
     </app>
     <app>
         <name>Project Siena</name>
         <category>Tools</category>
+        <publisher>Microsoft Corporation</publisher>
         <icon>https://microsoftwarestudios.github.io/winstore/appRes/projectsiena/StoreLogo.png</icon>
     </app>
     <app>
         <name>Microsoft Wordament</name>
         <category>Games</category>
+        <publisher>Microsoft Studios</publisher>
         <icon>https://microsoftwarestudios.github.io/winstore/appRes/wordament/StoreLogo.png</icon>
     </app>
     <app>
         <name>Microsoft Minesweeper</name>
         <category>Games</category>
+        <publisher>Microsoft Studios</publisher>
         <icon>https://microsoftwarestudios.github.io/winstore/appRes/minesweeper/StoreLogo.png</icon>
     </app>
 </store>
