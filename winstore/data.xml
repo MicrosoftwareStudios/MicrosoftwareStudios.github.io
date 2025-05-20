@@ -14,6 +14,7 @@
             <feature>Multiple themes</feature>
         </features>
         <install>https://microsoftwarestudios.github.io/winstore/install/mssolitaire</install>
+        <publisher>Microsoft Studios</publisher>
     </app>
     <app>
         <name>Microsoft Mahjong</name>
@@ -32,11 +33,22 @@
         <name>AccuWeather for Windows 8</name>
         <category>News</category>
         <icon>https://microsoftwarestudios.github.io/winstore/appRes/accuweather/StoreLogo.png</icon>
+        <publisher>AccuWeather.com</publisher>
+        <description></description>
+        <features>
+            <feature>MinuteCast Forecasts</feature>
+            <feature>Weather Timeline</feature>
+            <feature>Severe Weather Alers</feature>
+        </features>
+        <install>https://microsoftwarestudios.github.io/winstore/install/accuweather</install>
     </app>
     <app>
         <name>Xbox One SmartGlass</name>
         <category>Games</category>
         <icon>https://microsoftwarestudios.github.io/winstore/appRes/xboxcompanion/StoreLogo.png</icon>
+        <publisher>Microsoft Corporation</publisher>
+        <description></description>
+        <install>https://microsoftwarestudios.github.io/winstore/install/xboxcompanion</install>
     </app>
     <app>
         <name>Adobe Acrobat PDF Reader</name>
