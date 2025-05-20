@@ -4,6 +4,16 @@
         <name>Microsoft Solitaire Collection</name>
         <category>Games</category>
         <icon>https://microsoftwarestudios.github.io/winstore/appRes/solitaire/StoreLogo.png</icon>
+        <description>Microsoft Solitaire Collection includes 5 different types of solitaire so you can wind down while earning awards. With 5 default themes and the ability to create your own, you can make Microsoft Solitaire Collection your very own.</description>
+        <features>
+            <feature>Klondike (Classic Solitaire)</feature>
+            <feature>Spider Solitaire</feature>
+            <feature>FreeCell</feature>
+            <feature>Pyramid</feature>
+            <feature>TriPeaks</feature>
+            <feature>Multiple themes</feature>
+        </features>
+        <install>https://microsoftwarestudios.github.io/winstore/install/mssolitaire</install>
     </app>
     <app>
         <name>Microsoft Mahjong</name>
