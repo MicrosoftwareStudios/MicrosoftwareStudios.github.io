@@ -40,7 +40,7 @@
             <feature>Weather Timeline</feature>
             <feature>Severe Weather Alers</feature>
         </features>
-        <install>https://microsoftwarestudios.github.io/winstore/install/accuweather</install>
+        <install>https://microsoftwarestudios.github.io/winstore/install/accuweather.ps1</install>
     </app>
     <app>
         <name>Xbox One SmartGlass</name>
