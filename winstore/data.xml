@@ -13,7 +13,7 @@
             <feature>TriPeaks</feature>
             <feature>Multiple themes</feature>
         </features>
-        <install>https://microsoftwarestudios.github.io/winstore/install/mssolitaire</install>
+        <install>https://microsoftwarestudios.github.io/winstore/install/mssolitaire.ps1</install>
         <publisher>Microsoft Studios</publisher>
     </app>
     <app>
@@ -26,7 +26,7 @@
             <feature>Medals</feature>
             <feature>Multiple themes</feature>
         </features>
-        <install>https://microsoftwarestudios.github.io/winstore/install/msmahjong</install>
+        <install>https://microsoftwarestudios.github.io/winstore/install/msmahjong.ps1</install>
         <publisher>Microsoft Studios</publisher>
     </app>
     <app>
