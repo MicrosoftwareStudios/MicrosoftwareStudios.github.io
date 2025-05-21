@@ -59,7 +59,7 @@
         <install>https://microsoftwarestudios.github.io/winstore/install/acrobatreader.ps1</install>
     </app>
     <app>
-        <name>Project Siena</name>
+        <name>Microsoft "Project Siena"</name>
         <category>Tools</category>
         <publisher>Microsoft Corporation</publisher>
         <icon>https://microsoftwarestudios.github.io/winstore/appRes/projectsiena/StoreLogo.png</icon>
