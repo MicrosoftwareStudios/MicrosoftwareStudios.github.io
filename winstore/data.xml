@@ -55,12 +55,15 @@
         <category>Tools</category>
         <publisher>Adobe Systems Inc.</publisher>
         <icon>https://microsoftwarestudios.github.io/winstore/appRes/acrobatreader/StoreLogo.png</icon>
+        <description>Edit and read PDF Documents with the classic PDF reader from Adobe.</description>
+        <install>https://microsoftwarestudios.github.io/winstore/install/acrobatreader.ps1</install>
     </app>
     <app>
         <name>Project Siena</name>
         <category>Tools</category>
         <publisher>Microsoft Corporation</publisher>
         <icon>https://microsoftwarestudios.github.io/winstore/appRes/projectsiena/StoreLogo.png</icon>
+        <description>Project Siena is a zero-code Modern UI application design suite.</description>
     </app>
     <app>
         <name>Microsoft Wordament</name>
