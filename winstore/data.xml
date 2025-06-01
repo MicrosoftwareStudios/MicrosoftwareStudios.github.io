@@ -89,5 +89,16 @@
         <name>Microsoft Minesweeper</name>
         <category>Games</category>
         <publisher>Microsoft Studios</publisher>
+        <description>
+            Top 5 Free Game in the Windows Store! Play the classic 
+            puzzle game that has been a part of Windows for more 
+            than 20 years, now re-imagined for Windows 8. Featuring 
+            adjustable difficulty, classic Minesweeper gameplay, and a 
+            brand new Adventure gameplay mode, Microsoft 
+            Minesweeper is better than ever. Play Daily Challenges, 
+            earn medals, and take your game online with Xbox 
+            achievements and leaderboards. 
+
+        </description>
     </app>
 </store>
