@@ -4,7 +4,15 @@
         <name>Microsoft Solitaire Collection</name>
         <category>Games</category>
         <icon>https://microsoftwarestudios.github.io/winstore/appRes/solitaire/StoreLogo.png</icon>
-        <description>Microsoft Solitaire Collection includes 5 different types of solitaire so you can wind down while earning awards. With 5 default themes and the ability to create your own, you can make Microsoft Solitaire Collection your very own.</description>
+        <description>
+            #1 Top Free Game in the Windows Store! Pick up and play 
+            the evolution of this class c card game on Windows 81 
+            Microsoft Solitaire Collect on features all of your favorite 
+            game modes: Klondike, FreeCell, Spider, TriPeaks, and 
+            Pyramid. Play Daily Challenges, choose themes and take 
+            your game online with Xbox achievements and 
+            leaderboards. 
+        </description>
         <features>
             <feature>Klondike (Classic Solitaire)</feature>
             <feature>Spider Solitaire</feature>
