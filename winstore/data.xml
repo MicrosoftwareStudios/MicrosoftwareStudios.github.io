@@ -20,6 +20,7 @@
             <feature>Pyramid</feature>
             <feature>TriPeaks</feature>
             <feature>Multiple themes</feature>
+            <feature>Daily Challenges!</feature>
         </features>
         <install>https://microsoftwarestudios.github.io/winstore/install/mssolitaire.ps1</install>
         <publisher>Microsoft Studios</publisher>
@@ -28,11 +29,17 @@
         <name>Microsoft Mahjong</name>
         <category>Games</category>
         <icon>https://microsoftwarestudios.github.io/winstore/appRes/mahjong/StoreLogo.png</icon>
-        <description>Microsoft Mahjong many different mahjong puzzles so you can wind down while earning badges. With 4 different difficulty levels, anyone with any skill level can play.</description>
+        <description>
+            Top 5 Free Game in the Windows Store! Microsoft 
+            Mahjong is the classic matching game updated with 
+            beautiful imagery, intuitive controls, and all the features 
+            that fans of mahjong have come to expect.
+        </description>
         <features>
             <feature>Many unique puzzles</feature>
             <feature>Medals</feature>
             <feature>Multiple themes</feature>
+            <feature>Daily Challenges!</feature>
         </features>
         <install>https://microsoftwarestudios.github.io/winstore/install/msmahjong.ps1</install>
         <publisher>Microsoft Studios</publisher>
