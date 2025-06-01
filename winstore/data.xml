@@ -67,11 +67,17 @@
     </app>
     <app>
         <name>Adobe Acrobat PDF Reader</name>
-        <category>Tools</category>
+        <category>Productivity / Software</category>
         <publisher>Adobe Systems Inc.</publisher>
         <icon>https://microsoftwarestudios.github.io/winstore/appRes/acrobatreader/StoreLogo.png</icon>
         <description>Edit and read PDF Documents with the classic PDF reader from Adobe.</description>
         <install>https://microsoftwarestudios.github.io/winstore/install/acrobatreader.ps1</install>
+        <features>
+            <feature>Open and view PDF's</feature>
+            <feature>Annotate with sticky notes and highlights</feature>
+            <feature>Fill and sign forms</feature>
+            <feature>Print and share documents</feature>
+        </features>
     </app>
     <app>
         <name>Microsoft "Project Siena"</name>
