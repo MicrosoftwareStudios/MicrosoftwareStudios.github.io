@@ -67,7 +67,7 @@
     </app>
     <app>
         <name>Adobe Acrobat PDF Reader</name>
-        <category>Productivity & Software</category>
+        <category>Productivity - Software</category>
         <publisher>Adobe Systems Inc.</publisher>
         <icon>https://microsoftwarestudios.github.io/winstore/appRes/acrobatreader/StoreLogo.png</icon>
         <description>Edit and read PDF Documents with the classic PDF reader from Adobe.</description>
