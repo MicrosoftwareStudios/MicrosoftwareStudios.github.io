@@ -1,0 +1,10 @@
+<tile>
+  <visual>
+    <binding template="TileWideText01">
+      <text id="1">Hello, World!</text>
+    </binding>
+    <binding template="TileSquareText01">
+      <text id="1">Hello!</text>
+    </binding>
+  </visual>
+</tile>
