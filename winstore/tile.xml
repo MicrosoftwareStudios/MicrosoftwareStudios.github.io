@@ -1,16 +1,17 @@
 <tile>
   <visual>
-    <binding template="TileWideText03">
-      <text id="1">Download Microsoft Solitaire Collection!</text>
+    <binding template="TileWideFlip">
+      <text id="1" hint-wrap="true">Download Microsoft Solitaire Collection!</text>
     </binding>
     <binding template="TileSquareText01">
-      <text id="1">Store</text>
+      <text id="1" hint-wrap="true">Store</text>
     </binding>
-    <binding template="TileWideText03">
-      <text id="1">Check out Wikipedia!</text>
+    <binding template="TileWideFlipBack">
+      <image src="ms-appx:///appRes/default.png">
+      <text id="1" hint-wrap="true">Check out Wikipedia!</text>
     </binding>
     <binding template="TileSquareText01">
-      <text id="1">Updates</text>
+      <text id="1" hint-wrap="true">Updates</text>
     </binding>
   </visual>
 </tile>
