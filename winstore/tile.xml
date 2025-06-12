@@ -1,10 +1,10 @@
 <tile>
   <visual>
-    <binding template="TileWideText01">
-      <text id="1">Hello, World!</text>
+    <binding template="TileWideText03">
+      <text id="1">Download Microsoft Solitaire Collection!</text>
     </binding>
     <binding template="TileSquareText01">
-      <text id="1">Hello!</text>
+      <text id="1">AccuWeather</text>
     </binding>
   </visual>
 </tile>
