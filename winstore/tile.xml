@@ -1,17 +1,14 @@
 <tile>
   <visual>
-    <binding template="TileWide">
-      <text id="1">Download Microsoft Solitaire Collection!</text>
+    <binding template="TileWideSmallImageAndText04">
+      <text id="1">Microsoft Solitaire Collection</text>
+      <text id="1">
+        Games
+      </text>
+      <image src="https://microsoftwarestudios.github.io/winstore/appRes/mssolitaire/StoreLogo.png" />
     </binding>
     <binding template="TileSquareText01">
       <text id="1">Store</text>
-    </binding>
-    <binding template="TileWideBack">
-      <image src="ms-appx:///appRes/default.png" />
-      <text id="1">Check out Wikipedia!</text>
-    </binding>
-    <binding template="TileSquareText01">
-      <text id="1">Updates</text>
     </binding>
   </visual>
 </tile>
