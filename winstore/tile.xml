@@ -7,7 +7,7 @@
       <text id="1">Store</text>
     </binding>
     <binding template="TileWideBack">
-      <image src="ms-appx:///appRes/default.png">
+      <image src="ms-appx:///appRes/default.png" />
       <text id="1">Check out Wikipedia!</text>
     </binding>
     <binding template="TileSquareText01">
