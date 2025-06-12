@@ -3,7 +3,6 @@
     <binding template="TileWideSmallImageAndText04">
       <image id="1" src="https://microsoftwarestudios.github.io/winstore/appRes/solitaire/StoreLogo.png" />
       <text id="1" hint-style="caption">Microsoft Solitaire Collection</text>
-      <text id="2">Games</text>
     </binding>
     <binding template="TileSquareText02">
       <text id="1">Store</text>
