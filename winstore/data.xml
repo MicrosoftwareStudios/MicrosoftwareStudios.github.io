@@ -107,4 +107,21 @@
 
         </description>
     </app>
+    <app>
+        <name>Wikipedia</name>
+        <category>Internet</category>
+        <icon>https://microsoftwarestudios.github.io/winstore/appRes/wikipedia/StoreLogo.png</icon>
+        <description>
+            Browse, read, and edit Wikipedia articles with the official Wikipedia
+            app from the Wikimedia Foundation.
+        </description>
+        <features>
+            <feature>Article Editor</feature>
+            <feature>Search Wikipedia</feature>
+            <feature>View articles</feature>
+            <feature>Read the Article of the Day</feature>
+        </features>
+        <install>https://microsoftwarestudios.github.io/winstore/install/wikipedia.ps1</install>
+        <publisher>Wikimedia Foundation</publisher>
+    </app>
 </store>
