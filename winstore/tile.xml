@@ -1,12 +1,12 @@
 <tile>
   <visual>
-    <binding template="TileWideFlip">
+    <binding template="TileWide">
       <text id="1">Download Microsoft Solitaire Collection!</text>
     </binding>
     <binding template="TileSquareText01">
       <text id="1">Store</text>
     </binding>
-    <binding template="TileWideFlipBack">
+    <binding template="TileWideBack">
       <image src="ms-appx:///appRes/default.png">
       <text id="1">Check out Wikipedia!</text>
     </binding>
