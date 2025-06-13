@@ -1,8 +1,12 @@
 <tile>
   <visual>
     <binding template="TileWideImageAndText01">
-      <image id="1" src="ms-appx:///appRes/wikipedia_tile.png" />
+      <image id="1" src="https://microsoftwarestudios.github.io/winstore/appRes/wikipedia/liveTile.png" />
       <text id="1">Wikipedia</text>
+    </binding>
+    <binding template="TileSquareText02">
+      <text id="1">Wikipedia</text>
+      <text id="2">Staff Pick</text>
     </binding>
   </visual>
 </tile>
