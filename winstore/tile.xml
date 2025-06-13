@@ -1,6 +1,6 @@
 <tile>
   <visual>
-    <binding template="TileWideImageAndText01">
+    <binding template="TileWideImageAndText04">
       <image id="1" src="https://microsoftwarestudios.github.io/winstore/appRes/solitaire/StoreLogo.png" />
       <text id="1">Microsoft Solitaire Collection</text>
     </binding>
