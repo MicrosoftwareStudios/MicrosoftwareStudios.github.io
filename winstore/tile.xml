@@ -1,15 +1,13 @@
 <tile>
-  <visual>
-    <binding template="TileWideImageAndText01">
+  <visual version="2">
+    <binding template="TileWide310x150ImageAndText01">
       <image id="1" src="https://microsoftwarestudios.github.io/winstore/appRes/wikipedia/liveTile.png" />
       <text id="1">Wikipedia</text>
     </binding>
-    <binding template="TileSquareText02">
+    <binding template="TileSquare150x150Text02">
       <text id="1">Wikipedia</text>
       <text id="2">Staff Pick</text>
     </binding>
-  </visual>
-  <visual version="2">
     <binding template="TileSquare310x310SmallImageAndText01">
       <image id="1" src="https://microsoftwarestudios.github.io/winstore/appRes/wikipedia/Store.png" />
       <text id="1">Wikipedia</text>
