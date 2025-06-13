@@ -9,4 +9,12 @@
       <text id="2">Staff Pick</text>
     </binding>
   </visual>
+  <visual version="2">
+    <binding template="TileSquare310x310SmallImageAndText01">
+      <image id="1" src="https://microsoftwarestudios.github.io/winstore/appRes/wikipedia/Store.png" />
+      <text id="1">Wikipedia</text>
+      <text id="2">Staff Pick</text>
+      <text id="3"></text>
+    </binding>
+  </visual>
 </tile>
