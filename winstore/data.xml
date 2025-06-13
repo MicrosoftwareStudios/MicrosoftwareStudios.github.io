@@ -110,7 +110,7 @@
     <app>
         <name>Wikipedia</name>
         <category>Internet</category>
-        <icon>https://microsoftwarestudios.github.io/winstore/appRes/wikipedia/StoreLogo.png</icon>
+        <icon>https://microsoftwarestudios.github.io/winstore/appRes/wikipedia/Store.png</icon>
         <description>
             Browse, read, and edit Wikipedia articles with the official Wikipedia
             app from the Wikimedia Foundation.
