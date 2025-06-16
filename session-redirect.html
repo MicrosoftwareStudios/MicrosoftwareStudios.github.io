@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stay Signed In</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3f3f3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background: white;
+            padding: 40px;
+            width: 300px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .desc {
+            font-size: 14px;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .checkbox-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        input[type="checkbox"] {
+            margin-right: 10px;
+        }
+
+        .btn {
+            width: 100%;
+            padding: 10px;
+            background-color: #0078D4;
+            border: none;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        .btn:hover {
+            background-color: #005EA6;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="resources/images/largeLogo.png" height="30">
+        <div class="title">Stay signed in?</div>
+        <div class="desc">You won't have to sign in again next time.</div>
+        
+        <div class="checkbox-container">
+            <input type="checkbox" id="staySignedIn">
+            <label for="staySignedIn">Keep me signed in</label>
+        </div>
+
+        <button class="btn" onclick="continueSignIn()">Continue</button>
+    </div>
+
+    <script>
+        // Check if the user is already signed in
+        window.onload = function() {
+            if (document.cookie.includes("staySignedIn=true")) {
+                window.location.href = "signin.html"; // Redirect if cookie is set
+            }
+        };
+
+        function continueSignIn() {
+            if (document.getElementById("staySignedIn").checked) {
+                // Set a cookie to persist login state (valid for 30 days)
+                document.cookie = "staySignedIn=true; path=/; max-age=" + (30 * 24 * 60 * 60);
+            }
+
+            // Redirect to the dashboard or home page
+            window.location.href = "signin.html";
+        }
+    </script>
+</body>
+</html>

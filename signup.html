@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign In to your Microsoftware Account</title>
+    <title>Sign Up</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -14,7 +14,7 @@
             height: 100vh;
         }
 
-        .login-container {
+        .signup-container {
             background: white;
             padding: 40px;
             width: 300px;
@@ -22,7 +22,7 @@
             border-radius: 5px;
         }
 
-        .login-title {
+        .signup-title {
             font-size: 18px;
             font-weight: bold;
             margin-bottom: 10px;
@@ -37,18 +37,7 @@
             border-radius: 5px;
         }
 
-        .forgot-password {
-            text-align: right;
-            font-size: 12px;
-            color: #0078D4;
-            cursor: pointer;
-        }
-
-        .forgot-password:hover {
-            text-decoration: underline;
-        }
-
-        .btn-signin {
+        .btn-signup {
             width: 100%;
             padding: 10px;
             background-color: #0078D4;
@@ -60,25 +49,24 @@
             margin-top: 10px;
         }
 
-        .btn-signin:hover {
+        .btn-signup:hover {
             background-color: #005EA6;
         }
     </style>
 </head>
 <body>
-    <div class="login-container">
+    <div class="signup-container">
         <img src="resources/images/largeLogo.png" height="30">
-        <div class="login-title">Sign in</div>
-        <input type="email" id="email" placeholder="Email">
-        <input type="password" id="password" placeholder="Password">
-        <a href="https://microsoftwarestudios.github.io/404.html"><div class="forgot-password">Forgot password?</div></a>
-        <button class="btn-signin" onclick="signIn()">Sign in</button>
+        <div class="signup-title">Create account</div>
+        <input type="email" id="signup-email" placeholder="Email">
+        <input type="password" id="signup-password" placeholder="Password">
+        <button class="btn-signup" onclick="signUp()">Sign Up</button>
     </div>
 
     <script type="module">
         // Import Firebase functions
         import { initializeApp } from "https://www.gstatic.com/firebasejs/11.9.1/firebase-app.js";
-        import { getAuth, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/11.9.1/firebase-auth.js";
+        import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/11.9.1/firebase-auth.js";
         import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.9.1/firebase-analytics.js";
 
         // Firebase configuration
@@ -97,16 +85,15 @@
         const auth = getAuth(app);
         const analytics = getAnalytics(app);
 
-        // Sign-in function
-        window.signIn = function() {
-            const email = document.getElementById("email").value;
-            const password = document.getElementById("password").value;
+        // Signup function
+        window.signUp = function() {
+            const email = document.getElementById("signup-email").value;
+            const password = document.getElementById("signup-password").value;
 
-            signInWithEmailAndPassword(auth, email, password)
+            createUserWithEmailAndPassword(auth, email, password)
                 .then(userCredential => {
-                    alert("Logged in successfully!");
+                    alert("Account created successfully!");
                     console.log(userCredential.user);
-		    window.location.href = "session-redirect.html";
                 })
                 .catch(error => alert("Error: " + error.message));
         };
