@@ -92,8 +92,8 @@
 
             createUserWithEmailAndPassword(auth, email, password)
                 .then(userCredential => {
-                    alert("Account created successfully!");
                     console.log(userCredential.user);
+                    window.location.href = "account/dashboard.html";
                 })
                 .catch(error => alert("Error: " + error.message));
         };
