@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Account Dashboard</title>
+    <script src="https://kit.fontawesome.com/YOUR-FONTAWESOME-KIT.js" crossorigin="anonymous"></script>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -34,6 +35,10 @@
             margin-right: 15px;
         }
 
+        .home-button i {
+            margin-right: 5px;
+        }
+
         .home-button:hover {
             text-decoration: underline;
         }
@@ -55,19 +60,20 @@
         }
 
         .sidebar a {
-            display: block;
+            display: flex;
+            align-items: center;
             color: #0078D4;
             text-decoration: none;
             font-size: 16px;
             padding: 10px 0;
         }
 
-        .sidebar a:hover {
-            text-decoration: underline;
+        .sidebar a i {
+            margin-right: 10px;
         }
 
-        .sidebar-nav {
-            flex-grow: 1;
+        .sidebar a:hover {
+            text-decoration: underline;
         }
 
         .sidebar-footer {
@@ -75,6 +81,7 @@
             text-align: center;
             font-size: 14px;
             color: #777;
+            margin-top: auto;
         }
 
         .main-content {
@@ -104,21 +111,21 @@
 </head>
 <body>
     <div class="header">
-        <button class="home-button" onclick="window.location.href='index.html'">🏠</button>
-        <h1>Account</h1>
+        <button class="home-button" onclick="window.location.href='index.html'">
+            <i class="fas fa-home"></i> Home
+        </button>
+        Account
     </div>
     
     <div class="container">
         <div class="sidebar">
-            <div class="sidebar-nav">
-                <a href="#">Profile</a>
-                <a href="#">Security</a>
-                <a href="#">Devices</a>
-                <a href="#">My Product Keys</a>
-                <a href="#">Privacy Settings</a>
-            </div>
+            <a href="#"><i class="fas fa-user"></i> Profile</a>
+            <a href="#"><i class="fas fa-shield-alt"></i> Security</a>
+            <a href="#"><i class="fas fa-laptop"></i> Devices</a>
+            <a href="#"><i class="fas fa-credit-card"></i> My Purchases</a>
+            <a href="#"><i class="fas fa-user-secret"></i> Privacy Settings</a>
             <div class="sidebar-footer">
-                © 2025 Microsoftware
+                © 2025 Your Company
             </div>
         </div>
 
@@ -135,7 +142,7 @@
 
             <div class="card">
                 <div class="card-title">Privacy Controls</div>
-                <div class="card-desc">Adjust how Microsoftware collects and uses your data.</div>
+                <div class="card-desc">Adjust how Microsoft collects and uses your data.</div>
             </div>
         </div>
     </div>
