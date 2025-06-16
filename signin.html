@@ -63,6 +63,9 @@
         .btn-signin:hover {
             background-color: #005EA6;
         }
+	.links {
+	    display: inline;
+	}
     </style>
 </head>
 <body>
@@ -71,7 +74,10 @@
         <div class="login-title">Sign in</div>
         <input type="email" id="email" placeholder="Email">
         <input type="password" id="password" placeholder="Password">
-        <a href="https://microsoftwarestudios.github.io/404.html"><div class="forgot-password">Forgot password?</div></a>
+	<div>
+		<a href="signup.html"><div class="forgot-password">Don't have an account? Create one!</div></a>
+        	<a href="https://microsoftwarestudios.github.io/404.html"><div class="forgot-password">Forgot password?</div></a>
+	</div class="links">
         <button class="btn-signin" onclick="signIn()">Sign in</button>
     </div>
 
