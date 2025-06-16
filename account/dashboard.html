@@ -1,8 +1,101 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Account Dashboard</title>
-  </head>
-  <body>
-  </body>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f3f3f3;
+        }
+
+        .header {
+            background-color: #0078D4;
+            color: white;
+            padding: 15px 30px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .container {
+            display: flex;
+        }
+
+        .sidebar {
+            width: 250px;
+            background: white;
+            padding: 20px;
+            box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .sidebar a {
+            display: block;
+            color: #0078D4;
+            text-decoration: none;
+            font-size: 16px;
+            padding: 10px 0;
+        }
+
+        .sidebar a:hover {
+            text-decoration: underline;
+        }
+
+        .main-content {
+            flex: 1;
+            padding: 30px;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .card-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .card-desc {
+            font-size: 14px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">Account</div>
+    
+    <div class="container">
+        <div class="sidebar">
+            <a href="#">Profile</a>
+            <a href="#">Security</a>
+            <a href="#">Devices</a>
+            <a href="#">Subscriptions</a>
+            <a href="#">Privacy Settings</a>
+        </div>
+
+        <div class="main-content">
+            <div class="card">
+                <div class="card-title">Your Profile</div>
+                <div class="card-desc">Manage your personal details and security settings.</div>
+            </div>
+
+            <div class="card">
+                <div class="card-title">Connected Devices</div>
+                <div class="card-desc">View and manage the devices linked to your account.</div>
+            </div>
+
+            <div class="card">
+                <div class="card-title">Privacy Controls</div>
+                <div class="card-desc">Adjust how Microsoft collects and uses your data.</div>
+            </div>
+        </div>
+    </div>
+</body>
 </html>
