@@ -10,9 +10,14 @@
             margin: 0;
             padding: 0;
             background-color: #f3f3f3;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
         }
 
         .header {
+            display: flex;
+            align-items: center;
             background-color: #0078D4;
             color: white;
             padding: 15px 30px;
@@ -20,8 +25,22 @@
             font-weight: bold;
         }
 
+        .home-button {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 20px;
+            cursor: pointer;
+            margin-right: 15px;
+        }
+
+        .home-button:hover {
+            text-decoration: underline;
+        }
+
         .container {
             display: flex;
+            flex: 1;
         }
 
         .sidebar {
@@ -29,6 +48,10 @@
             background: white;
             padding: 20px;
             box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            position: relative;
         }
 
         .sidebar a {
@@ -41,6 +64,17 @@
 
         .sidebar a:hover {
             text-decoration: underline;
+        }
+
+        .sidebar-nav {
+            flex-grow: 1;
+        }
+
+        .sidebar-footer {
+            padding-top: 20px;
+            text-align: center;
+            font-size: 14px;
+            color: #777;
         }
 
         .main-content {
@@ -69,15 +103,23 @@
     </style>
 </head>
 <body>
-    <div class="header">Account</div>
+    <div class="header">
+        <button class="home-button" onclick="window.location.href='index.html'">🏠</button>
+        <h1>Account</h1>
+    </div>
     
     <div class="container">
         <div class="sidebar">
-            <a href="#">Profile</a>
-            <a href="#">Security</a>
-            <a href="#">Devices</a>
-            <a href="#">Subscriptions</a>
-            <a href="#">Privacy Settings</a>
+            <div class="sidebar-nav">
+                <a href="#">Profile</a>
+                <a href="#">Security</a>
+                <a href="#">Devices</a>
+                <a href="#">My Product Keys</a>
+                <a href="#">Privacy Settings</a>
+            </div>
+            <div class="sidebar-footer">
+                © 2025 Microsoftware
+            </div>
         </div>
 
         <div class="main-content">
@@ -93,7 +135,7 @@
 
             <div class="card">
                 <div class="card-title">Privacy Controls</div>
-                <div class="card-desc">Adjust how Microsoft collects and uses your data.</div>
+                <div class="card-desc">Adjust how Microsoftware collects and uses your data.</div>
             </div>
         </div>
     </div>
