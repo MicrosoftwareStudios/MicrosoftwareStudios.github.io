@@ -46,7 +46,7 @@
     </app>
     <app>
         <name>AccuWeather for Windows 8</name>
-        <category>News</category>
+        <category>News & Weather</category>
         <icon>https://microsoftwarestudios.github.io/winstore/appRes/accuweather/StoreLogo.png</icon>
         <publisher>AccuWeather.com</publisher>
         <description></description>
