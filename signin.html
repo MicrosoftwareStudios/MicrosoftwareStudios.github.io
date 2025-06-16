@@ -119,7 +119,6 @@
 
             signInWithEmailAndPassword(auth, email, password)
                 .then(userCredential => {
-                    alert("Logged in successfully!");
                     console.log(userCredential.user);
 		    window.location.href = "session-redirect.html";
                 })
