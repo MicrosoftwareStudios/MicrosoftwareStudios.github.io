@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign Up</title>
+    <title>Create a Microsoftware Account</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -52,6 +52,16 @@
         .btn-signup:hover {
             background-color: #005EA6;
         }
+        .forgot-password {
+            text-align: left;
+            font-size: 12px;
+            color: #0078D4;
+            cursor: pointer;
+        }
+
+        .forgot-password:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
@@ -60,7 +70,7 @@
         <div class="signup-title">Create account</div>
         <input type="email" id="signup-email" placeholder="Email">
         <input type="password" id="signup-password" placeholder="Password">
-        <a href="signin.html">Already have an account? Click here to sign in.</a>
+        <a href="signin.html"><div class="forgot-password">Already have an account? Click here to sign in.</div></a>
         <button class="btn-signup" onclick="signUp()">Sign Up</button>
     </div>
 
