@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Key Verification</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3f3f3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background: white;
+            padding: 40px;
+            width: 300px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            text-align: left;
+        }
+
+        .btn {
+            width: 100%;
+            padding: 10px;
+            background-color: #0078D4;
+            border: none;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        .btn:hover {
+            background-color: #005EA6;
+        }
+
+        .message {
+            font-size: 14px;
+            color: red;
+            margin-top: 10px;
+        }
+
+        .edition {
+            font-size: 16px;
+            font-weight: bold;
+            color: #0078D4;
+            margin-top: 30px;
+        }
+
+        .download-link {
+            display: none;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="title">Enter your Product Key</div>
+	<p>It should have come with your copy of OneDesk on the card inside the box. You will need to do this in order to download OneDesk.</p>
+        <input type="text" id="productKey" placeholder="XXXXX-XXXXX-XXXXX-XXXXX-XXXXX">
+        <button class="btn" onclick="verifyKey()">Verify</button>
+        <div class="message" id="message"></div>
+        <div class="edition" id="edition"></div>
+        <div class="download-link" id="downloadLink"></div>
+    </div>
+
+    <script>
+        async function fetchKeys() {
+            const editions = {
+                "https://microsoftwarestudios.github.io/skycloud/cloudauth/odLicReg.dat": { name: "Home Office Edition", link: "download_standard.html" },
+                "https://microsoftwarestudios.github.io/skycloud/cloudauth/odProLicReg.dat": { name: "Pro", link: "download_pro.html" },
+                "https://microsoftwarestudios.github.io/skycloud/cloudauth/odStartLicReg.dat": { name: "Starter Edition", link: "download_enterprise.html" }
+            };
+
+            let editionKeys = {};
+
+            for (const [file, info] of Object.entries(editions)) {
+                const response = await fetch(file);
+                const text = await response.text();
+                editionKeys[file] = { ...info, keys: text.split("&").map(key => key.trim()) };
+            }
+
+            return editionKeys;
+        }
+
+        async function verifyKey() {
+            const enteredKey = document.getElementById("productKey").value.replace(/-/g, ""); // Remove hyphens
+            const editionKeys = await fetchKeys();
+            const messageDiv = document.getElementById("message");
+            const editionDiv = document.getElementById("edition");
+            const downloadLinkDiv = document.getElementById("downloadLink");
+
+            for (const edition of Object.values(editionKeys)) {
+                if (edition.keys.includes(enteredKey)) {
+                    editionDiv.textContent = `OneDesk 2025 ${edition.name}`;
+                    downloadLinkDiv.innerHTML = `<a href="${edition.link}"><button class="btn">Download</button></a>`;
+                    downloadLinkDiv.style.display = "block";
+                    return;
+                }
+            }
+
+            messageDiv.textContent = "Invalid Product Key. Please try again.";
+        }
+    </script>
+</body>
+</html>
