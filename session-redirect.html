@@ -81,7 +81,7 @@
         // Check if the user is already signed in
         window.onload = function() {
             if (document.cookie.includes("staySignedIn=true")) {
-                window.location.href = "index.html"; // Redirect if cookie is set
+                window.location.href = "account/dashboard.html"; // Redirect if cookie is set
             }
         };
 
@@ -92,7 +92,7 @@
             }
 
             // Redirect to the dashboard or home page
-            window.location.href = "index.html";
+            window.location.href = "account/dashboard.html";
         }
     </script>
 </body>
