@@ -70,7 +70,16 @@
             color: #0078D4;
             margin-top: 30px;
         }
+		.forgot-password {
+            text-align: left;
+            font-size: 12px;
+            color: #0078D4;
+            cursor: pointer;
+        }
 
+        .forgot-password:hover {
+            text-decoration: underline;
+        }
         .download-link {
             display: none;
             font-size: 14px;
@@ -95,6 +104,7 @@
         <div class="message" id="message"></div>
         <div class="edition" id="edition"></div>
         <div class="download-link" id="downloadLink"></div>
+		<a href="/404.html"><div class="forgot-password">Don't own OneDesk? Buy it here.</div></a>
     </div>
     <img src="/resources/images/largeLogo.png" class="logo">
 
@@ -127,7 +137,7 @@
 
             for (const edition of Object.values(editionKeys)) {
                 if (edition.keys.includes(enteredKey)) {
-		    messageDiv.textContent = "";
+		    		messageDiv.textContent = "";
                     editionDiv.textContent = `OneDesk 2025 ${edition.name}`;
                     downloadLinkDiv.innerHTML = `<a href="${edition.link}"><button class="btn">Download</button></a>`;
                     downloadLinkDiv.style.display = "block";
