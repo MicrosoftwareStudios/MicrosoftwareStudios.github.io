@@ -36,7 +36,57 @@
 .topnav {
     display: flex;
     align-items: center;
+    justify-content: space-between; /* Ensures elements spread out */
+    width: 100%;
 }
+
+.search-area {
+    display: flex;
+    align-items: center;
+    margin-left: auto; /* Pushes search and user button to the right */
+}
+
+form.example {
+    display: flex;
+    align-items: center;
+}
+
+form.example input[type=text] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    width: 250px;
+    border-radius: 5px;
+}
+
+form.example button {
+    padding: 10px;
+    background: #0078D4;
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+
+form.example button:hover {
+    background: #00599E;
+}
+
+.user-button {
+    background: none;
+    border: none;
+    color: black;
+    font-size: 20px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.user-button:hover {
+    color: #0078D4;
+}
+
 
 .topnav img {
     height: 40px;
@@ -69,36 +119,6 @@
     margin-left: auto;
     margin-right: auto;
 }
-
-/* Search bar */
-form.example {
-    display: flex;
-    align-items: center;
-}
-
-form.example input[type=text] {
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    width: 250px;
-    border-radius: 5px;
-}
-
-form.example button {
-    padding: 10px;
-    background: #0078D4;
-    color: white;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    margin-left: 5px;
-}
-
-form.example button:hover {
-    background: #00599E;
-}
-
 /* Footer */
 footer {
     text-align: center;
@@ -123,20 +143,23 @@ footer img {
 	</head>
 	<body>
 	    <div class="header">
-		<div class="topnav">
-			<img src="resources/images/logo.png" alt="Microsoftware Logo" height=40>
-			<h1>Microsoftware</h1>
-	    		<a class="active" href="index.html">Home</a>
-	    		<a href="downloads.html">Downloads</a>
-	    		<a href="help.html">Help</a>
-	    		<a href="about.html">About</a>
-	    		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-            		<form class="example" action="search/index.html">
-  	    			<input type="search", placeholder="Search..", name="gsc.tab=0&gsc.q", height=50, autocomplete="on">
- 	    			<button class="btn", type="submit"><i class="fa fa-search"></i></button>
-	    		</form>
-			<a href="signin.html"><button class="btn"><i class="fa fa-user"></i></button></a>
-	    	</div>
+			<div class="topnav">
+		    	<img src="resources/images/logo.png" alt="Microsoftware Logo" height="40">
+    			<h1>Microsoftware</h1>
+    			<a class="active" href="index.html">Home</a>
+    			<a href="downloads.html">Downloads</a>
+    			<a href="help.html">Help</a>
+    			<a href="about.html">About</a>
+    
+    			<div class="search-area">
+        			<form class="example" action="search/index.html">
+            			<input type="search" placeholder="Search.." name="gsc.tab=0&gsc.q" autocomplete="on">
+           				<button type="submit"><i class="fa fa-search"></i></button>
+        			</form>
+        			<a href="signin.html"><button class="user-button"><i class="fa fa-user"></i></button></a>
+    			</div>
+			</div>
+
 	    </div>
 	    <div class="mainBody">
 		<br>
