@@ -45,7 +45,7 @@ h3 {
     top: 0;
     left: 0;
     background-color: white;
-    padding: 10px 20px;
+    padding: 10px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -55,7 +55,62 @@ h3 {
 .topnav {
     display: flex;
     align-items: center;
+    justify-content: space-between; /* Ensures elements spread out */
+    width: 100%;
 }
+
+.search-area {
+    display: flex;
+    align-items: center;
+    margin-left: auto; /* Pushes search and user button to the right */
+}
+
+form.example {
+    display: flex;
+    align-items: center;
+}
+
+form.example input[type=text] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    width: 250px;
+	height: 36px;
+    border-radius: 5px;
+}
+
+form.example button {
+    padding: 10px;
+    background: #0078D4;
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+
+form.example button:hover {
+    background: #00599E;
+}
+
+.user-button {
+    font-size: 20px;
+    margin-left: 5px;
+	margin-right: 20px;
+	background-color: #0067B8;
+    border: none;
+    color: white;
+    padding: 12px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.user-button:hover {
+    background-color: #00599E;
+}
+
 
 .topnav img {
     height: 40px;
@@ -68,6 +123,9 @@ h3 {
     font-size: 16px;
     padding: 10px 15px;
     transition: background 0.3s;
+}
+.topnav h1 {
+	padding-right: 40px;
 }
 
 .topnav a:hover {
@@ -88,36 +146,6 @@ h3 {
     margin-left: auto;
     margin-right: auto;
 }
-
-/* Search bar */
-form.example {
-    display: flex;
-    align-items: center;
-}
-
-form.example input[type=text] {
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    width: 250px;
-    border-radius: 5px;
-}
-
-form.example button {
-    padding: 10px;
-    background: #0078D4;
-    color: white;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    margin-left: 5px;
-}
-
-form.example button:hover {
-    background: #00599E;
-}
-
 /* Footer */
 footer {
     text-align: center;
@@ -131,7 +159,6 @@ footer img {
     height: 50px;
     margin-top: 10px;
 }
-
 
 
 
