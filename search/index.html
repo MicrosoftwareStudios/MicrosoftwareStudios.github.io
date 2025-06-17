@@ -52,5 +52,16 @@
 	  <br>
 	<div class="gcse-searchresults"></div>
   </div>
+	<script>
+    window.onload = function() {
+        const params = new URLSearchParams(window.location.search);
+        const query = params.get("q");
+        if (query) {
+            document.querySelector(".gcse-searchbox input").value = query;
+            document.querySelector(".gcse-searchbox input").dispatchEvent(new Event("input"));
+        }
+    };
+</script>
+
 </body>
 </html>
