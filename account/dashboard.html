@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Account Dashboard</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="/styles.css">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -16,7 +17,7 @@
             height: 100vh;
         }
 
-        .header {
+        .head {
             display: flex;
             align-items: center;
             background-color: #0078D4;
@@ -110,11 +111,12 @@
     </style>
 </head>
 <body>
-    <div class="header">
+    <div class="head">
         <button class="home-button" onclick="window.location.href='/index.html'">
             <i class="fas fa-home"></i>
         </button>
         Account
+        <button class="btn" onclick="deleteCookie(StaySignedIn)">Sign Out</button>
     </div>
     
     <div class="container">
@@ -150,5 +152,10 @@
             </div>
         </div>
     </div>
+    <script>
+        function deleteCookie(cookieName) {
+            document.cookie = cookieName + "=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+        }
+    </script>
 </body>
 </html>
