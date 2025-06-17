@@ -127,6 +127,7 @@
 
             for (const edition of Object.values(editionKeys)) {
                 if (edition.keys.includes(enteredKey)) {
+		    messageDiv.textContent = "";
                     editionDiv.textContent = `OneDesk 2025 ${edition.name}`;
                     downloadLinkDiv.innerHTML = `<a href="${edition.link}"><button class="btn">Download</button></a>`;
                     downloadLinkDiv.style.display = "block";
