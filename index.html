@@ -140,6 +140,13 @@ footer img {
     height: 50px;
     margin-top: 10px;
 }
+.search-bar {
+            border: none;
+            outline: none;
+            flex-grow: 1;
+            padding: 10px;
+            font-size: 16px;
+        }
 </style>
 	<head>
 		<title>Microsoftware - Home</title>
@@ -161,7 +168,7 @@ footer img {
     
     			<div class="search-area">
         			<form class="example" action="search/index.html" method="GET">
-            			<input type="search" placeholder="Search..." name="q" autocomplete="on" height=36px>
+            			<input class="search-bar" type="search" placeholder="Search..." name="q" autocomplete="on" height=36px>
            				<button type="submit"><i class="fa fa-search"></i></button>
         			</form>
         			<a href="signin.html"><button class="user-button"><i class="fa fa-user"></i></button></a>
