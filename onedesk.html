@@ -7,6 +7,7 @@
 	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
 	<link rel="icon", type="image/x-icon", href="resources/images/onedeskLogo.png">
 	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<style>
 		* {
 			font-family: sans-serif;
@@ -26,8 +27,26 @@
 </head>
 
 <body>
-	<H1><img src="resources/images/onedeskLogo.png", alt="OneDesk Logo", height=30> OneDesk</H1>
-	<hr>
+	<div class="header">
+			<div class="topnav">
+		    	<img src="resources/images/logo.png" alt="Microsoftware Logo" height="40">
+    			<h1>Microsoftware</h1>
+    			<a href="index.html">Home</a>
+    			<a class="active" href="downloads.html">Downloads</a>
+    			<a href="help.html">Help</a>
+    			<a href="about.html">About</a>
+    
+    			<div class="search-area">
+        			<form class="example" action="search/index.html" method="GET">
+            			<input class="search-bar" type="search" placeholder="Search..." name="q" autocomplete="on" height=36px>
+           				<button type="submit"><i class="fa fa-search"></i></button>
+        			</form>
+        			<a href="signin.html"><button class="user-button"><i class="fa fa-user"></i></button></a>
+    			</div>
+			</div>
+
+	    </div>
+		<div class="mainBody">
 	<br>
 	<img src="resources/images/oneDeskPage.png", alt="OneDesk Promotion", width=100%>
 	<br>
@@ -50,10 +69,12 @@
 		<hr>
 	</div>
 	<br>
-	<hr>
+		</div>
+	<div class="footer">
 	<br>
 	<p>Copyright Microsoftware Corporation 2025. All rights reserved.</p>
 	<br>
+	</div>
 </body>
 
 </html>
