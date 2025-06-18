@@ -159,6 +159,9 @@ footer img {
     height: 50px;
     margin-top: 10px;
 }
+.notLink {
+	text-decoration: none;
+}
 
 
 
