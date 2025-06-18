@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product Key Verification</title>
+    <title>Download OneDesk</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -99,7 +99,7 @@
 <body>
     <div class="container">
         <div class="title">Enter your Product Key</div>
-	<p>It should have come with your copy of OneDesk on the card inside the box. You will need to do this in order to download OneDesk.</p>
+	<p>It should have come with your copy of OneDesk on the card inside the box it came in, or, if you purchased a digital edition, in the email that was sent to you when you bought OneDesk.</p>
         <input type="text" id="productKey" placeholder="XXXXX-XXXXX-XXXXX-XXXXX-XXXXX">
         <button class="btn" onclick="verifyKey()">Verify</button>
         <div class="message" id="message"></div>
@@ -113,9 +113,9 @@
     <script>
         async function fetchKeys() {
             const editions = {
-                "/skycloud/cloudauth/odLicReg.dat": { name: "Home Office Edition", link: "download_standard.html" },
-                "/skycloud/cloudauth/odProLicReg.dat": { name: "Pro", link: "download_pro.html" },
-                "/skycloud/cloudauth/odStartLicReg.dat": { name: "Starter Edition", link: "download_enterprise.html" }
+                "/skycloud/cloudauth/odLicReg.dat": { name: "Home Office Edition", link: "/skycloud/dl-service/oneDeskCDN/2532/1/install/ho/onedesk-setup.exe" },
+                "/skycloud/cloudauth/odProLicReg.dat": { name: "Pro", link: "/skycloud/dl-service/oneDeskCDN/2532/1/install/pro/onedesk-setup.exe" },
+                "/skycloud/cloudauth/odStartLicReg.dat": { name: "Starter Edition", link: "/skycloud/dl-service/oneDeskCDN/2532/1/install/start/onedesk-setup.exe" }
             };
 
             let editionKeys = {};
@@ -145,7 +145,7 @@
 					if (enteredKey === "") {
 						messageDiv.textContent = "IMPORTANT: Without a product key, you will only be able to access a 7-day free trial.";
 						editionDiv.textContent = "OneDesk 2025 Starter Edition";
-						downloadLinkDiv.innerHTML = `<a href="/downloads/oneDeskCDN/2532/install/start/onedesk-setup.exe"><button class="btn">Download</button></a>`;
+						downloadLinkDiv.innerHTML = `<a href="/skycloud/dl-service/oneDeskCDN/2532/1/install/start/onedesk-setup.exe"><button class="btn">Download</button></a>`;
 					}
                     return;
                 }
