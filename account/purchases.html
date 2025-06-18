@@ -32,10 +32,8 @@
             console.log(`Product Key: ${key}`);
             console.log(`Edition: ${edition}`);
             return { key, edition };
-            const keyDiv = document.getElementById("key");
-            const editionDiv = document.getElementById("edition");
-            keyDiv.textContent = key;
-            editionDiv.textContent = edition;
+            document.getElementById("key").textContent = data.key;
+            document.getElementById("edition").textContent = data.edition;
         } else {
             console.error("User not found.");
             return null;
