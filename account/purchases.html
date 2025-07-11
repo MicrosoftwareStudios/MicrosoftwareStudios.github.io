@@ -4,8 +4,8 @@
     <title>Account-Purchases</title>
 </head>
 <body>
-    <div id="key"></div>
-    <div id="edition"></div>
+    <div class="key" id="key">Key</div>
+    <div class="edition" id="edition">Edition</div>
 <script type="module">
     import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.1/firebase-app.js";
     import { getFirestore, doc, getDoc } from "https://www.gstatic.com/firebasejs/10.12.1/firebase-firestore.js";
@@ -33,7 +33,6 @@
             const edition = data.edition;
             console.log(`Product Key: ${key}`);
             console.log(`Edition: ${edition}`);
-            return { key, edition };
             document.getElementById("key").textContent = `Product Key: ${key}`;
             document.getElementById("edition").textContent = `Edition: ${edition}`;
         } else {
