@@ -4,8 +4,38 @@
     <title>Account-Purchases</title>
 </head>
 <body>
-    <div class="key" id="key">Key</div>
-    <div class="edition" id="edition">Edition</div>
+    <div class="head">
+        <button class="home-button" onclick="window.location.href='/index.html'">
+            <i class="fas fa-home"></i>
+        </button>
+        Account
+        <div class="search-area">
+            <button class="btn" onclick="deleteCookie('staySignedIn')">Sign Out</button>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="sidebar">
+            <a href="#"><i class="fas fa-user"></i> Profile</a>
+            <a href="#"><i class="fas fa-shield-alt"></i> Security</a>
+            <a href="#"><i class="fas fa-laptop"></i> Devices</a>
+            <a href="purchases.html"><i class="fas fa-credit-card"></i> My Purchases</a>
+            <a href="#"><i class="fas fa-user-secret"></i> Privacy Settings</a>
+            <div class="sidebar-footer">
+                © 2025 Microsoftware
+            </div>
+        </div>
+
+        <div class="main-content">
+            <a href="#" class="notLink">
+            <div class="card">
+                <div class="card-title">OneDesk</div>
+                <div class="card-desc" id="key">Key</div>
+                <div class="card-desc" id="edition">Edition</div>
+            </div>
+            </a>
+        </div>
+    </div>
 <script type="module">
     import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.1/firebase-app.js";
     import { getFirestore, doc, getDoc } from "https://www.gstatic.com/firebasejs/10.12.1/firebase-firestore.js";
