@@ -146,8 +146,8 @@
         <div class="main-content">
             <div class="card">
                 <div class="card-title">OneDesk</div>
-                <div class="card-desc" id="edition">N/A</div>
-                <div class="card-desc" id="key">None Owned</div>
+                <div class="card-desc" id="edition">Loading...</div>
+                <div class="card-desc" id="key">Loading...</div>
                 <div class="download" id="dlButton"><button class="btn">Download</button></div>
             </div>
             <div class="card">
@@ -197,7 +197,8 @@
         } else {
             console.error("User not found.");
             document.getElementById("key").textContent = "";
-            document.getElementById("edition").textContent = "Not Owned";
+            document.getElementById("edition").textContent = "You don't own a copy of OneDesk.";
+            document.getElementById("dlButton").innerHTML = "";
         }
     }
     function getCookie(name) {
