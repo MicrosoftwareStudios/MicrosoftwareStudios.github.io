@@ -204,8 +204,8 @@ select:focus {
                   </select>
                 </div>
                 <div class="ms-field">
-                  <label for="edition">Edition</label>
-                  <select id="edition">
+                  <label for="editionDropdown">Edition</label>
+                  <select id="editionDropdown">
                     <option value="">Select an edition</option>
                   </select>
                 </div>
@@ -276,7 +276,7 @@ select:focus {
 
     function updateEditions() {
       const product = document.getElementById("product").value;
-      const editionSelect = document.getElementById("edition");
+      const editionSelect = document.getElementById("editionDropdown");
       editionSelect.innerHTML = '<option value="">Select an edition</option>';
 
       if (editions[product]) {
