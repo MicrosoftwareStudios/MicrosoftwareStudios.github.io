@@ -114,23 +114,23 @@
 
         // Sign-in function
         window.signIn = function() {
-    const email = document.getElementById("email").value;
-    const password = document.getElementById("password").value;
+    		const email = document.getElementById("email").value;
+    		const password = document.getElementById("password").value;
 
-    signInWithEmailAndPassword(auth, email, password)
-        .then(userCredential => {
-            const userId = userCredential.user.uid;
+    		signInWithEmailAndPassword(auth, email, password)
+        	.then(userCredential => {
+            	const userId = userCredential.user.uid;
 
-            // Set cookie with user ID
-            const expires = new Date();
-            expires.setTime(expires.getTime() + (30 * 24 * 60 * 60 * 1000)); // 7 days
-            document.cookie = `userID=${userId}; expires=${expires.toUTCString()}; path=/; secure`;
+            	// Set cookie with user ID
+            	const expires = new Date();
+            	expires.setTime(expires.getTime() + (30 * 24 * 60 * 60 * 1000)); // 7 days
+            	document.cookie = `userID=${userId}; expires=${expires.toUTCString()}; path=/; secure`;
 
-            // Redirect to session page
-            window.location.href = "session-redirect.html";
-        })
-        .catch(error => alert("Error: " + error.message));
-};
-
+            	// Redirect to session page
+            	window.location.href = "session-redirect.html";
+       	   })
+        	.catch(error => alert("Error: " + error.message));
+		};
+    </script>
 </body>
 </html>
