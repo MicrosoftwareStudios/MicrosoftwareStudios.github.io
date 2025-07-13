@@ -13,6 +13,15 @@
             height: 100vh;
         }
 
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            text-align: left;
+        }
+
         .head {
             display: flex;
             align-items: center;
@@ -153,6 +162,7 @@
             <div class="card">
                 <div class="card-title">Link a Product Key</div>
                 <div class="card-desc">Link your purchased product keys to your Microsoftware Account so you never lose them.</div>
+                <input id="keyInput" type="text" placeholder="XXXXX-XXXXX-XXXXX-XXXXX-XXXXX"></input>
                 <div class="download"><button class="btn">Link Key</button></div>
             </div>
         </div>
