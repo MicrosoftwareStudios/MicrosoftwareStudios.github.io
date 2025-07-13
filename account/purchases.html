@@ -285,5 +285,37 @@ select:focus {
       }
     }
   </script>
+    <script>
+        async function fetchKeys() {
+            const editions = {
+                "/skycloud/cloudauth/odLicReg.dat": { name: "Home Office Edition", link: "/skycloud/dl-service/oneDeskCDN/1/2532/install/ho/onedesk-setup.exe" },
+                "/skycloud/cloudauth/odProLicReg.dat": { name: "Pro", link: "/skycloud/dl-service/oneDeskCDN/1/2532/install/pro/onedesk-setup.exe" },
+                "/skycloud/cloudauth/odStartLicReg.dat": { name: "Starter Edition", link: "/skycloud/dl-service/oneDeskCDN/1/2532/install/start/onedesk-setup.exe" }
+            };
+
+            let editionKeys = {};
+
+            for (const [file, info] of Object.entries(editions)) {
+                const response = await fetch(file);
+                const text = await response.text();
+                editionKeys[file] = { ...info, keys: text.split("&").map(key => key.trim()) };
+            }
+
+            return editionKeys;
+        }
+        async function verifyKey() {
+            const enteredKey = document.getElementById("keyInput").value.replace(/-/g, ""); // Remove hyphens
+            const editionKeys = await fetchKeys();
+            const downloadLinkDiv = document.getElementById("verifyButton");
+			
+            for (const edition of Object.values(editionKeys)) {
+                if (edition.keys.includes(enteredKey)) {
+                    downloadLinkDiv.style.display = "block";
+                    return;
+                }
+            }
+        }
+        
+    </script>
 </body>
 </html>
