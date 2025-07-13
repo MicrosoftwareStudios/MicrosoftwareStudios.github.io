@@ -126,6 +126,38 @@
             font-size: 20px;
             font-weight: bold;
         }
+        .ms-field {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #605e5c;
+}
+
+select {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #c8c6c4;
+  border-radius: 4px;
+  background-color: #ffffff;
+  color: #323130;
+  transition: border-color 0.2s ease-in-out;
+}
+
+select:focus {
+  border-color: #0078d4;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(0,120,212,0.2);
+}
+        h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #323130;
+}
     </style>
     <title>My Purchases</title>
 </head>
@@ -162,6 +194,21 @@
             <div class="card">
                 <div class="card-title">Link a Product Key</div>
                 <div class="card-desc">Link your purchased product keys to your Microsoftware Account so you never lose them.</div>
+                <div class="ms-field">
+                  <label for="product">Product</label>
+                  <select id="product" onchange="updateEditions()">
+                    <option value="">Select a product</option>
+                    <option value="surface">Surface</option>
+                    <option value="xbox">Xbox</option>
+                    <option value="office">Office</option>
+                  </select>
+                </div>
+                <div class="ms-field">
+                  <label for="edition">Edition</label>
+                  <select id="edition">
+                    <option value="">Select an edition</option>
+                  </select>
+                </div>
                 <input id="keyInput" type="text" placeholder="XXXXX-XXXXX-XXXXX-XXXXX-XXXXX"></input>
                 <div class="download"><button class="btn">Link Key</button></div>
             </div>
@@ -220,6 +267,27 @@
     const uID = getCookie("userID")
     getUserLicense(uID);
 </script>
+<script>
+    const editions = {
+      surface: ["Go", "Pro", "Laptop", "Studio"],
+      xbox: ["Series S", "Series X", "One"],
+      office: ["Home", "Business", "Enterprise"]
+    };
 
+    function updateEditions() {
+      const product = document.getElementById("product").value;
+      const editionSelect = document.getElementById("edition");
+      editionSelect.innerHTML = '<option value="">Select an edition</option>';
+
+      if (editions[product]) {
+        editions[product].forEach(edition => {
+          const option = document.createElement("option");
+          option.value = edition.toLowerCase().replace(/\s+/g, '-');
+          option.textContent = edition;
+          editionSelect.appendChild(option);
+        });
+      }
+    }
+  </script>
 </body>
 </html>
