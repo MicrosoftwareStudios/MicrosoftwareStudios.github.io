@@ -148,7 +148,7 @@
                 <div class="card-title">OneDesk</div>
                 <div class="card-desc" id="edition">N/A</div>
                 <div class="card-desc" id="key">None Owned</div>
-                <div class="download"><button class="btn">Download</button></div>
+                <div class="download" id="dlButton"><button class="btn">Download</button></div>
             </div>
             <div class="card">
                 <div class="card-title">Link a Product Key</div>
@@ -188,13 +188,16 @@
             const data = snap.data();
             const key = data.key;
             const edition = data.edition;
+            const resURI = data.url;
             console.log(`Product Key: ${key}`);
             console.log(`Edition: ${edition}`);
             document.getElementById("key").textContent = `Product Key: ${key}`;
             document.getElementById("edition").textContent = `Edition: ${edition}`;
+            document.getElementById("dlButton").innerHTML = `<a href="${resURI}" class="notLink"><button class="btn">Download</button></a>`;
         } else {
             console.error("User not found.");
-            return null;
+            document.getElementById("key").textContent = "";
+            document.getElementById("edition").textContent = "Not Owned";
         }
     }
 
