@@ -198,9 +198,7 @@ select:focus {
                   <label for="product">Product</label>
                   <select id="product" onchange="updateEditions()">
                     <option value="">Select a product</option>
-                    <option value="surface">Surface</option>
-                    <option value="xbox">Xbox</option>
-                    <option value="office">Office</option>
+                    <option value="surface">OneDesk</option>
                   </select>
                 </div>
                 <div class="ms-field">
@@ -269,9 +267,7 @@ select:focus {
 </script>
 <script>
     const editions = {
-      surface: ["Go", "Pro", "Laptop", "Studio"],
-      xbox: ["Series S", "Series X", "One"],
-      office: ["Home", "Business", "Enterprise"]
+      onedesk: ["Pro", "Home Office", "Starter"],
     };
 
     function updateEditions() {
