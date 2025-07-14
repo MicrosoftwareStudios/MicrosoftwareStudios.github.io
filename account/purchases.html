@@ -286,7 +286,7 @@ select:focus {
     }
   </script>
     <script type="module">
-		async function initializeFirebaseSrv() {
+
 	    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.1/firebase-app.js";
     import { getFirestore, doc, getDoc } from "https://www.gstatic.com/firebasejs/10.12.1/firebase-firestore.js";
 
@@ -302,10 +302,7 @@ select:focus {
 
     const app = initializeApp(firebaseConfig);
     const db = getFirestore(app);
-	return db;
-		}
-	</script>
-	<script>
+			
         async function fetchKeys() {
             const editions = {
                 "/skycloud/cloudauth/odLicReg.dat": { name: "Home Office Edition", link: "/skycloud/dl-service/oneDeskCDN/1/2532/install/ho/onedesk-setup.exe" },
@@ -352,7 +349,7 @@ select:focus {
                 }
             }
         }
-        
+        window.verifyKey = verifyKey;
     </script>
 </body>
 </html>
