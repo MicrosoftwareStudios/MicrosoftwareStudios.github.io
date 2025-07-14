@@ -321,7 +321,6 @@ select:focus {
             return editionKeys;
         }
 		function addDocument(productURI) {
-			const db = initializeFirebaseSrv();
       		db.collection(getCookie("userID")).add({
         		edition: document.getElementById("editionDropdown").value,
         		key: document.getElementById("keyInput").value,
