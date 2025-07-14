@@ -208,7 +208,7 @@ select:focus {
                   </select>
                 </div>
                 <input id="keyInput" type="text" placeholder="XXXXX-XXXXX-XXXXX-XXXXX-XXXXX"></input>
-                <div class="download"><button class="btn" onclick="verifyKey()">Link Key</button></div>
+                <div class="download"><button class="btn" id="submit">Link Key</button></div>
             </div>
         </div>
     </div>
@@ -373,6 +373,10 @@ async function createUserDocument() {
             }
         }
         window.verifyKey = verifyKey;
+	    document.querySelector("#submit").addEventListener("click", () => {
+  console.log("Clicked!");
+	verifyKey()
+});
     </script>
 </body>
 </html>
