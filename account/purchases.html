@@ -325,7 +325,7 @@ select:focus {
         	if (parts.length === 2) return parts.pop().split(';').shift();
         	return null;
     	}
-import { collection, setDoc } from "firebase/firestore";
+import { collection, setDoc } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
 
 async function createUserDocument() {
   const userId = getCookie("userID");
