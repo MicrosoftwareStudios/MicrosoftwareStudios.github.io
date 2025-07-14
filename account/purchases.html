@@ -326,21 +326,23 @@ select:focus {
         	if (parts.length === 2) return parts.pop().split(';').shift();
         	return null;
     	}
-		function addDocument(productURI) {
-      		db.collection(getCookie("userID")).add({
-        		edition: document.getElementById("editionDropdown").value,
-        		key: document.getElementById("keyInput").value,
-        		url: productURI
-      		})
-      		.then((docRef) => {
-        		console.log("Document written with ID: ", docRef.id);
-        		alert("Document added with ID: " + docRef.id);
-      		})
-      		.catch((error) => {
-        		console.error("Error adding document: ", error);
-        		alert("Error adding document: " + error);
-      		});
-    	}
+	async function createNewDocument(collectionName, docId) {
+  try {
+    const docRef = db.collection(collectionName).doc(docId);
+
+    const data = {
+      edition: document.getElementById("editionDropdown").value,
+      key: document.getElementById("keyInput").value,
+      url: "testing"
+    };
+
+    await docRef.set(data);
+    console.log("Document created successfully!");
+  } catch (error) {
+    console.error("Error creating document:", error);
+  }
+}
+
         async function verifyKey() {
             const enteredKey = document.getElementById("keyInput").value.replace(/-/g, ""); // Remove hyphens
             const editionKeys = await fetchKeys();
@@ -348,7 +350,7 @@ select:focus {
 			
             for (const edition of Object.values(editionKeys)) {
                 if (edition.keys.includes(enteredKey)) {
-					addDocument("testing...")
+					createNewDocument("users", getCookie("userID"))
 					console.debug("tada, your key is right")
                     return;
                 }
