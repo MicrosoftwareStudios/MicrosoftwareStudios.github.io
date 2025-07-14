@@ -220,7 +220,7 @@ select:focus {
     </script>
 <script type="module">
     import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.1/firebase-app.js";
-
+    import { getFirestore } from "https://www.gstatic.com/firebasejs/10.12.1/firebase-firestore.js";
     const firebaseConfig = {
   	apiKey: "AIzaSyArDDSjt9QDPu-h2pqtO73Z1KDZrgAdMMo",
   	authDomain: "ware-de78d.firebaseapp.com",
@@ -326,7 +326,7 @@ select:focus {
         	return null;
     	}
 import { collection, setDoc } from "firebase/firestore";
-import { db } from "/accountConfig";
+
 
 // Utility to read cookie value
 function getCookie(name) {
