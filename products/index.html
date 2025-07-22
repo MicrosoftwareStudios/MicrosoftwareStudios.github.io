@@ -1,3 +1,203 @@
+
+<!DOCTYPE html>
 <html>
-  
+	<style>
+	* {
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.btn {
+    background-color: #0067B8;
+    border: none;
+    color: white;
+    padding: 12px 30px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}   
+
+.btn:hover {
+    background-color: #00599E;
+} 
+
+.header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.topnav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Ensures elements spread out */
+    width: 100%;
+}
+
+.search-area {
+    display: flex;
+    align-items: center;
+    margin-left: auto; /* Pushes search and user button to the right */
+}
+
+form.example {
+    display: flex;
+    align-items: center;
+}
+
+form.example input[type=text] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    width: 250px;
+	height: 36px;
+    border-radius: 5px;
+}
+
+form.example button {
+    padding: 10px;
+    background: #0078D4;
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+
+form.example button:hover {
+    background: #00599E;
+}
+
+.user-button {
+    font-size: 20px;
+    margin-left: 5px;
+	margin-right: 20px;
+	background-color: #0067B8;
+    border: none;
+    color: white;
+    padding: 12px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.user-button:hover {
+    background-color: #00599E;
+}
+
+
+.topnav img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.topnav a {
+    color: #000;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 15px;
+    transition: background 0.3s;
+}
+.topnav h1 {
+	padding-right: 40px;
+}
+
+.topnav a:hover {
+    background-color: #f1f1f1;
+    border-radius: 4px;
+}
+
+.topnav a.active {
+    background-color: #0078D4;
+    color: white;
+    border-radius: 4px;
+}
+
+.mainBody {
+    margin-top: 80px;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Footer */
+footer {
+    text-align: center;
+    background: white;
+    padding: 20px;
+    font-size: 14px;
+    box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.15);
+}
+
+footer img {
+    height: 50px;
+    margin-top: 10px;
+}
+.search-bar {
+            border: 2px;
+            outline: none;
+            flex-grow: 1;
+            padding: 10px;
+            font-size: 16px;
+        }
+</style>
+	<head>
+		<title>Microsoftware - Home</title>
+		 <link rel="icon" type="image/x-icon" href="resources/images/logo.png">
+		<link type="text/css" rel="stylesheet" href="styles.css"/>
+		<meta charset="utf-8"/>
+		<meta name="google-site-verification" content="MDA_mIQ95zPxBUFRSnCi5nnSr9LIYjy5-c9P4WBabE8" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+	<body>
+	    <div class="header">
+			<div class="topnav">
+		    	<img src="resources/images/logo.png" alt="Microsoftware Logo" height="40">
+    			<h1>Microsoftware</h1>
+    			<a href="index.html">Home</a>
+    			<a href="downloads.html">Downloads</a>
+          <a class="active" href="/products/">Products</a>
+    			<a href="help.html">Help</a>
+    			<a href="about.html">About</a>
+    
+    			<div class="search-area">
+        			<form class="example" action="search/index.html" method="GET">
+            			<input class="search-bar" type="search" placeholder="Search..." name="q" autocomplete="on" height=36px>
+           				<button type="submit"><i class="fa fa-search"></i></button>
+        			</form>
+        			<a href="signin.html"><button class="user-button"><i class="fa fa-user"></i></button></a>
+    			</div>
+			</div>
+
+	    </div>
+	    <div class="mainBody">
+		    
+	    </div>
+	  <footer>
+	      <div>
+		<p>© Microsoftware Corp. 2025. All rights reserved</p>
+	      <nav>
+		<ul>
+		    <li><a href="/">Home</a></li>
+		    <li><a href="downloads.html">Downloads</a></li>
+        <li>Products</li>
+		    <li><a href="help.html">Help</a></li>
+		    <li><a href="about.html">About</a></li>
+		</ul>
+	      </nav>
+		<h3>A <img src="rotran.jpg", height=100> Company</h3><a href=""><img scr="ytlogo.png"></a>
+		<br>
+	      </div>
+	    
+	  </footer>
+	</body>
 </html>
+
