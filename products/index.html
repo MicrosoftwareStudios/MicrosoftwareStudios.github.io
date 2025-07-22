@@ -6,6 +6,50 @@
     font-family: 'Segoe UI', sans-serif;
 }
 
+/* Individual card styling */
+.card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 24px;
+  width: 320px;
+  min-height: 420px;
+  transition: box-shadow 0.3s ease;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Image styling */
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+/* Hover effect */
+.card:hover {
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+/* Text styling */
+.card h3 {
+  margin: 0;
+  font-size: 1.25rem;
+  color: #2b2b2b;
+}
+
+.card p {
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-top: 12px;
+}
+
 .btn {
     background-color: #0067B8;
     border: none;
@@ -179,7 +223,24 @@ footer img {
 
 	    </div>
 	    <div class="mainBody">
-		    
+		    <div class="card-container">
+  <div class="card">
+    <img src="/resources/images/onedeskLogo.png" alt="Card image">
+    <h3>OneDesk 2025</h3>
+    <p>The office suite that enhances your productivity.</p>
+  </div>
+  <div class="card">
+    <img src="/resources/images/wbslogo.png" alt="Card image">
+    <h3>WebSurf</h3>
+    <p>The web browser that boosts your internet experience.</p>
+  </div>
+  <div>
+	  <img src="/resources/images/blinksmall.png" alt="Blink Logo">
+	  <h3>Blink Search</h3>
+	  <p>The search engine that gives you the results you want while protecting your privacy.</p>
+  </div>
+</div>
+
 	    </div>
 	  <footer>
 	      <div>
