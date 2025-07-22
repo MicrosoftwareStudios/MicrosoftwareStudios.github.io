@@ -6,6 +6,19 @@
     font-family: 'Segoe UI', sans-serif;
 }
 
+
+/* Container to center the cards */
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 40px;
+  min-height: 100vh;
+  background-color: #f3f3f3;
+}
+
 /* Individual card styling */
 .card {
   background-color: #ffffff;
@@ -13,7 +26,7 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   padding: 24px;
   width: 320px;
-  min-height: 420px;
+  min-height: 250px;
   transition: box-shadow 0.3s ease;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   display: flex;
@@ -24,8 +37,7 @@
 
 /* Image styling */
 .card img {
-  width: 100%;
-  height: 180px;
+  width: 200px;
   object-fit: cover;
   border-radius: 8px;
   margin-bottom: 16px;
@@ -49,6 +61,8 @@
   line-height: 1.5;
   margin-top: 12px;
 }
+
+
 
 .btn {
     background-color: #0067B8;
