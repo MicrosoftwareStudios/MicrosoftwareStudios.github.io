@@ -2,7 +2,7 @@
   <visual version="2">
     <binding template="TileWide310x150ImageAndText01">
       <image id="1" src="https://microsoftwarestudios.github.io/winstore/appRes/wikipedia/liveTile.png" />
-      <text id="1">PooPoo</text>
+      <text id="1">Wikipedia Sucks!</text>
     </binding>
     <binding template="TileSquare150x150Text02">
       <text id="1">Wikipedia</text>
