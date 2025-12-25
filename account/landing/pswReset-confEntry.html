@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choose a new password</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3f3f3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .login-container {
+            background: white;
+            padding: 40px;
+            width: 300px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+
+        .login-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            margin-top: 15px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .btn-signin {
+            width: 100%;
+            padding: 10px;
+            background-color: #0078D4;
+            border: none;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        .btn-signin:hover {
+            background-color: #005EA6;
+        }
+
+        .forgot-password {
+            text-align: left;
+            font-size: 12px;
+            color: #0078D4;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="login-container">
+        <img src="/resources/images/largeLogo.png" height="30">
+
+        <div class="login-title">Create a new password</div>
+
+        <input type="password" id="newPassword" placeholder="New password">
+        <input type="password" id="confirmPassword" placeholder="Confirm new password">
+
+        <button class="btn-signin" onclick="resetPassword()">Reset password</button>
+
+        <div id="status" style="font-size:12px; margin-top:10px;"></div>
+
+        <br>
+        <a href="/signin.html"><div class="forgot-password">Back to sign in</div></a>
+    </div>
+
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/11.9.1/firebase-app.js";
+        import { getAuth, verifyPasswordResetCode, confirmPasswordReset } from "https://www.gstatic.com/firebasejs/11.9.1/firebase-auth.js";
+
+        const firebaseConfig = {
+            apiKey: "AIzaSyArDDSjt9QDPu-h2pqtO73Z1KDZrgAdMMo",
+            authDomain: "ware-de78d.firebaseapp.com",
+            projectId: "ware-de78d",
+            storageBucket: "ware-de78d.firebasestorage.app",
+            messagingSenderId: "434521846825",
+            appId: "1:434521846825:web:904d72c4e5f33a9af29838",
+            measurementId: "G-PW8T28ENKG"
+        };
+
+        const app = initializeApp(firebaseConfig);
+        const auth = getAuth(app);
+
+        // Extract the oobCode from the URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const oobCode = urlParams.get("oobCode");
+
+        window.resetPassword = function() {
+            const newPass = document.getElementById("newPassword").value;
+            const confirmPass = document.getElementById("confirmPassword").value;
+            const status = document.getElementById("status");
+
+            if (!newPass || !confirmPass) {
+                status.style.color = "red";
+                status.textContent = "Please fill out both fields.";
+                return;
+            }
+
+            if (newPass !== confirmPass) {
+                status.style.color = "red";
+                status.textContent = "Passwords do not match.";
+                return;
+            }
+
+            // Step 1: Verify the reset code
+            verifyPasswordResetCode(auth, oobCode)
+                .then(() => {
+                    // Step 2: Confirm the new password
+                    return confirmPasswordReset(auth, oobCode, newPass);
+                })
+                .then(() => {
+                    status.style.color = "green";
+                    status.textContent = "Password successfully reset! Redirecting...";
+
+                    setTimeout(() => {
+                        window.location.href = "signin.html";
+                    }, 1500);
+                })
+                .catch(error => {
+                    status.style.color = "red";
+                    status.textContent = "Error: " + error.message;
+                });
+        };
+    </script>
+
+</body>
+</html>
