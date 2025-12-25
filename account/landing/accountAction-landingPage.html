@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Microsoftware Account Action</title>
+    <title>Microsoftware Account</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -64,14 +64,14 @@
 <body>
 
     <div class="login-container">
-        <img src="resources/images/largeLogo.png" height="30">
+        <img src="/resources/images/largeLogo.png" height="30">
 
         <div id="content"></div>
 
         <div id="status" style="font-size:12px; margin-top:10px;"></div>
 
         <br>
-        <a href="signin.html"><div class="forgot-password">Back to sign in</div></a>
+        <a href="/signin.html"><div class="forgot-password">Back to sign in</div></a>
     </div>
 
     <script type="module">
@@ -154,7 +154,7 @@
                 .then(() => {
                     status.style.color = "green";
                     status.textContent = "Password reset successful! Redirecting...";
-                    setTimeout(() => window.location.href = "signin.html", 1500);
+                    setTimeout(() => window.location.href = "/signin.html", 1500);
                 })
                 .catch(err => {
                     status.style.color = "red";
@@ -166,7 +166,7 @@
         // VERIFY EMAIL
         // -------------------------------
         function verifyEmail() {
-            content.innerHTML = `<div class="login-title">Verifying email…</div>`;
+            content.innerHTML = `<div class="login-title">Verify your email</div>`;
 
             applyActionCode(auth, oobCode)
                 .then(() => {
@@ -181,12 +181,12 @@
         // RECOVER EMAIL
         // -------------------------------
         function recoverEmail() {
-            content.innerHTML = `<div class="login-title">Restoring email…</div>`;
+            content.innerHTML = `<div class="login-title">Recover your email</div>`;
 
             checkActionCode(auth, oobCode)
                 .then(info => applyActionCode(auth, oobCode))
                 .then(() => {
-                    content.innerHTML = `<div class="login-title">Email restored successfully.</div>`;
+                    content.innerHTML = `<div class="login-title">Email recovered successfully.</div>`;
                 })
                 .catch(err => {
                     content.innerHTML = `<div class="login-title">Invalid or expired link</div>`;
