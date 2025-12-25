@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microsoftware Account Action</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3f3f3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .login-container {
+            background: white;
+            padding: 40px;
+            width: 300px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+
+        .login-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            margin-top: 15px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .btn-signin {
+            width: 100%;
+            padding: 10px;
+            background-color: #0078D4;
+            border: none;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        .btn-signin:hover {
+            background-color: #005EA6;
+        }
+
+        .forgot-password {
+            text-align: left;
+            font-size: 12px;
+            color: #0078D4;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="login-container">
+        <img src="resources/images/largeLogo.png" height="30">
+
+        <div id="content"></div>
+
+        <div id="status" style="font-size:12px; margin-top:10px;"></div>
+
+        <br>
+        <a href="signin.html"><div class="forgot-password">Back to sign in</div></a>
+    </div>
+
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/11.9.1/firebase-app.js";
+        import { 
+            getAuth,
+            verifyPasswordResetCode,
+            confirmPasswordReset,
+            applyActionCode,
+            checkActionCode 
+        } from "https://www.gstatic.com/firebasejs/11.9.1/firebase-auth.js";
+
+        const firebaseConfig = {
+            apiKey: "AIzaSyArDDSjt9QDPu-h2pqtO73Z1KDZrgAdMMo",
+            authDomain: "ware-de78d.firebaseapp.com",
+            projectId: "ware-de78d",
+            storageBucket: "ware-de78d.firebasestorage.app",
+            messagingSenderId: "434521846825",
+            appId: "1:434521846825:web:904d72c4e5f33a9af29838",
+            measurementId: "G-PW8T28ENKG"
+        };
+
+        const app = initializeApp(firebaseConfig);
+        const auth = getAuth(app);
+
+        const params = new URLSearchParams(window.location.search);
+        const mode = params.get("mode");
+        const oobCode = params.get("oobCode");
+
+        const content = document.getElementById("content");
+        const status = document.getElementById("status");
+
+        // -------------------------------
+        // MODE HANDLER
+        // -------------------------------
+        switch (mode) {
+
+            case "resetPassword":
+                showResetPasswordUI();
+                break;
+
+            case "verifyEmail":
+                verifyEmail();
+                break;
+
+            case "recoverEmail":
+                recoverEmail();
+                break;
+
+            default:
+                content.innerHTML = "<div class='login-title'>Invalid link</div>";
+        }
+
+        // -------------------------------
+        // RESET PASSWORD UI
+        // -------------------------------
+        function showResetPasswordUI() {
+            content.innerHTML = `
+                <div class="login-title">Create a new password</div>
+                <input type="password" id="newPass" placeholder="New password">
+                <input type="password" id="confirmPass" placeholder="Confirm password">
+                <button class="btn-signin" id="resetBtn">Reset password</button>
+            `;
+
+            document.getElementById("resetBtn").onclick = resetPassword;
+        }
+
+        function resetPassword() {
+            const newPass = document.getElementById("newPass").value;
+            const confirmPass = document.getElementById("confirmPass").value;
+
+            if (newPass !== confirmPass) {
+                status.style.color = "red";
+                status.textContent = "Passwords do not match.";
+                return;
+            }
+
+            verifyPasswordResetCode(auth, oobCode)
+                .then(() => confirmPasswordReset(auth, oobCode, newPass))
+                .then(() => {
+                    status.style.color = "green";
+                    status.textContent = "Password reset successful! Redirecting...";
+                    setTimeout(() => window.location.href = "signin.html", 1500);
+                })
+                .catch(err => {
+                    status.style.color = "red";
+                    status.textContent = "Error: " + err.message;
+                });
+        }
+
+        // -------------------------------
+        // VERIFY EMAIL
+        // -------------------------------
+        function verifyEmail() {
+            content.innerHTML = `<div class="login-title">Verifying email…</div>`;
+
+            applyActionCode(auth, oobCode)
+                .then(() => {
+                    content.innerHTML = `<div class="login-title">Email verified!</div>`;
+                })
+                .catch(err => {
+                    content.innerHTML = `<div class="login-title">Invalid or expired link</div>`;
+                });
+        }
+
+        // -------------------------------
+        // RECOVER EMAIL
+        // -------------------------------
+        function recoverEmail() {
+            content.innerHTML = `<div class="login-title">Restoring email…</div>`;
+
+            checkActionCode(auth, oobCode)
+                .then(info => applyActionCode(auth, oobCode))
+                .then(() => {
+                    content.innerHTML = `<div class="login-title">Email restored successfully.</div>`;
+                })
+                .catch(err => {
+                    content.innerHTML = `<div class="login-title">Invalid or expired link</div>`;
+                });
+        }
+
+    </script>
+
+</body>
+</html>
