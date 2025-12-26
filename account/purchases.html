@@ -213,162 +213,136 @@ select:focus {
         </div>
     </div>
     <script>
-        function deleteCookie(cookieName) {
-            document.cookie = cookieName + "=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
-            window.location.href = "/index.html";
-        }
-    </script>
+function deleteCookie(cookieName) {
+    document.cookie = cookieName + "=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+    window.location.href = "/index.html";
+}
+
+function getCookie(name) {
+    const value = `; ${document.cookie}`;
+    const parts = value.split(`; ${name}=`);
+    if (parts.length === 2) return parts.pop().split(";").shift();
+    return null;
+}
+</script>
+
 <script type="module">
-    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.1/firebase-app.js";
-    import { getFirestore, doc, getDoc } from "https://www.gstatic.com/firebasejs/10.12.1/firebase-firestore.js";
-    const firebaseConfig = {
-  	apiKey: "AIzaSyArDDSjt9QDPu-h2pqtO73Z1KDZrgAdMMo",
-  	authDomain: "ware-de78d.firebaseapp.com",
-  	projectId: "ware-de78d",
-  	storageBucket: "ware-de78d.firebasestorage.app",
-  	messagingSenderId: "434521846825",
-  	appId: "1:434521846825:web:904d72c4e5f33a9af29838",
-  	measurementId: "G-PW8T28ENKG"
-    };
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+import { 
+    getFirestore, doc, getDoc, collection, setDoc 
+} from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
 
-    const app = initializeApp(firebaseConfig);
-    const db = getFirestore(app);
+// ----------------------
+// Firebase Init (ONE TIME)
+// ----------------------
+const firebaseConfig = {
+    apiKey: "AIzaSyArDDSjt9QDPu-h2pqtO73Z1KDZrgAdMMo",
+    authDomain: "ware-de78d.firebaseapp.com",
+    projectId: "ware-de78d",
+    storageBucket: "ware-de78d.firebasestorage.app",
+    messagingSenderId: "434521846825",
+    appId: "1:434521846825:web:904d72c4e5f33a9af29838",
+    measurementId: "G-PW8T28ENKG"
+};
 
-    async function getUserLicense(userId) {
+const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
+
+// ----------------------
+// Fetch User License
+// ----------------------
+async function getUserLicense(userId) {
+    if (!userId) return;
+
     const userRef = doc(db, "users", userId);
     const snap = await getDoc(userRef);
 
-    	if (snap.exists()) {
-            const data = snap.data();
-            const key = data.key;
-            const edition = data.edition;
-            const resURI = data.url;
-            console.log(`Product Key: ${key}`);
-            console.log(`Edition: ${edition}`);
-            document.getElementById("key").textContent = `Product Key: ${key}`;
-            document.getElementById("edition").textContent = `Edition: ${edition}`;
-            document.getElementById("dlButton").innerHTML = `<a href="${resURI}" class="notLink"><button class="btn">Download</button></a>`;
-        } else {
-            console.error("User not found.");
-            document.getElementById("key").textContent = "";
-            document.getElementById("edition").textContent = "You don't own a copy of OneDesk.";
-            document.getElementById("dlButton").innerHTML = "";
-        }
+    if (snap.exists()) {
+        const data = snap.data();
+        document.getElementById("key").textContent = `Product Key: ${data.key}`;
+        document.getElementById("edition").textContent = `Edition: ${data.edition}`;
+        document.getElementById("dlButton").innerHTML =
+            `<a href="${data.url}" class="notLink"><button class="btn">Download</button></a>`;
+    } else {
+        document.getElementById("key").textContent = "";
+        document.getElementById("edition").textContent = "You don't own a copy of OneDesk.";
+        document.getElementById("dlButton").innerHTML = "";
     }
-    function getCookie(name) {
-        const value = `; ${document.cookie}`;
-        const parts = value.split(`; ${name}=`);
-        if (parts.length === 2) return parts.pop().split(';').shift();
-        return null;
-    }
-    const uID = getCookie("userID")
-    getUserLicense(uID);
-</script>
-<script>
-    const editions = {
-      onedesk: ["Pro", "Home Office", "Starter"],
-    };
-
-    function updateEditions() {
-      const product = document.getElementById("product").value;
-      const editionSelect = document.getElementById("editionDropdown");
-      editionSelect.innerHTML = '<option value="">Select an edition</option>';
-
-      if (editions[product]) {
-        editions[product].forEach(edition => {
-          const option = document.createElement("option");
-          option.value = edition.toLowerCase().replace(/\s+/g, '-');
-          option.textContent = edition;
-          editionSelect.appendChild(option);
-        });
-      }
-    }
-  </script>
-    <script type="module">
-
-	    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.1/firebase-app.js";
-    import { getFirestore, doc, getDoc } from "https://www.gstatic.com/firebasejs/10.12.1/firebase-firestore.js";
-
-    const firebaseConfig = {
-  	apiKey: "AIzaSyArDDSjt9QDPu-h2pqtO73Z1KDZrgAdMMo",
-  	authDomain: "ware-de78d.firebaseapp.com",
-  	projectId: "ware-de78d",
-  	storageBucket: "ware-de78d.firebasestorage.app",
-  	messagingSenderId: "434521846825",
-  	appId: "1:434521846825:web:904d72c4e5f33a9af29838",
-  	measurementId: "G-PW8T28ENKG"
-    };
-
-    const app = initializeApp(firebaseConfig);
-    const db = getFirestore(app);
-			
-        async function fetchKeys() {
-            const editions = {
-                "/skycloud/cloudauth/odLicReg.dat": { name: "Home Office Edition", link: "/skycloud/dl-service/oneDeskCDN/1/2532/install/ho/onedesk-setup.exe" },
-                "/skycloud/cloudauth/odProLicReg.dat": { name: "Pro", link: "/skycloud/dl-service/oneDeskCDN/1/2532/install/pro/onedesk-setup.exe" },
-                "/skycloud/cloudauth/odStartLicReg.dat": { name: "Starter Edition", link: "/skycloud/dl-service/oneDeskCDN/1/2532/install/start/onedesk-setup.exe" }
-            };
-
-            let editionKeys = {};
-
-            for (const [file, info] of Object.entries(editions)) {
-                const response = await fetch(file);
-                const text = await response.text();
-                editionKeys[file] = { ...info, keys: text.split("&").map(key => key.trim()) };
-            }
-
-            return editionKeys;
-        }
-		function getCookie(name) {
-        	const value = `; ${document.cookie}`;
-     	    const parts = value.split(`; ${name}=`);
-        	if (parts.length === 2) return parts.pop().split(';').shift();
-        	return null;
-    	}
-import { collection, setDoc } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
-
-async function createUserDocument() {
-  const userId = getCookie("userID");
-
-  if (!userId) {
-    console.error("No userID cookie found!");
-    return;
-  }
-
-  try {
-    const userRef = doc(collection(db, "myCollection"), userId);
-
-    await setDoc(userRef, {
-      name: "Alice",
-      city: "Crestwood",
-      favoriteColor: "Blue"
-    });
-
-    console.log("Document added with ID:", userId);
-  } catch (error) {
-    console.error("Error adding document:", error);
-  }
 }
 
+// ----------------------
+// Fetch Key Files
+// ----------------------
+async function fetchKeys() {
+    const editions = {
+        "/skycloud/cloudauth/odLicReg.dat": { name: "Home Office Edition", link: "/skycloud/dl-service/oneDeskCDN/1/2532/install/ho/onedesk-setup.exe" },
+        "/skycloud/cloudauth/odProLicReg.dat": { name: "Pro", link: "/skycloud/dl-service/oneDeskCDN/1/2532/install/pro/onedesk-setup.exe" },
+        "/skycloud/cloudauth/odStartLicReg.dat": { name: "Starter Edition", link: "/skycloud/dl-service/oneDeskCDN/1/2532/install/start/onedesk-setup.exe" }
+    };
 
-        async function verifyKey() {
-            const enteredKey = document.getElementById("keyInput").value.replace(/-/g, ""); // Remove hyphens
-            const editionKeys = await fetchKeys();
-            const downloadLinkDiv = document.getElementById("verifyButton");
-			
-            for (const edition of Object.values(editionKeys)) {
-                if (edition.keys.includes(enteredKey)) {
-					createUserDocument()
-					console.debug("tada, your key is right")
-                    return;
-                }
-            }
+    let editionKeys = {};
+
+    for (const [file, info] of Object.entries(editions)) {
+        const response = await fetch(file);
+        const text = await response.text();
+        editionKeys[file] = { ...info, keys: text.split("&").map(k => k.trim()) };
+    }
+
+    return editionKeys;
+}
+
+// ----------------------
+// Create Firestore Document
+// ----------------------
+async function createUserDocument() {
+    const userId = getCookie("userID");
+    if (!userId) return console.error("No userID cookie found!");
+
+    try {
+        const userRef = doc(collection(db, "myCollection"), userId);
+        await setDoc(userRef, {
+            name: "Alice",
+            city: "Crestwood",
+            favoriteColor: "Blue"
+        });
+
+        console.log("Document added with ID:", userId);
+    } catch (error) {
+        console.error("Error adding document:", error);
+    }
+}
+
+// ----------------------
+// Verify Product Key
+// ----------------------
+async function verifyKey() {
+    const enteredKey = document.getElementById("keyInput").value.replace(/-/g, "");
+    const editionKeys = await fetchKeys();
+
+    for (const edition of Object.values(editionKeys)) {
+        if (edition.keys.includes(enteredKey)) {
+            console.debug("Key is valid");
+            createUserDocument();
+            return;
         }
-        window.verifyKey = verifyKey;
-	    document.querySelector("#submit").addEventListener("click", () => {
-  console.log("Clicked!");
-	verifyKey()
+    }
+
+    console.warn("Invalid key");
+}
+
+window.verifyKey = verifyKey;
+
+// ----------------------
+// Load User License on Page Load
+// ----------------------
+const uID = getCookie("userID");
+getUserLicense(uID);
+
+// Button listener
+document.querySelector("#submit").addEventListener("click", () => {
+    console.log("Clicked!");
+    verifyKey();
 });
-    </script>
+</script>
 </body>
 </html>
