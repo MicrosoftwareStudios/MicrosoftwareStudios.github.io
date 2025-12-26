@@ -301,11 +301,11 @@ select:focus {
     if (snap.exists()) {
       const data = snap.data();
       const keyEl = document.getElementById("key");
-      const editionEl = formatEditionName(document.getElementById("edition"));
+      const editionEl = document.getElementById("edition");
       const dlButtonEl = document.getElementById("dlButton");
 
       if (keyEl) keyEl.textContent = `Product Key: ${data.key}`;
-      if (editionEl) editionEl.textContent = `Edition: ${data.edition}`;
+      if (editionEl) editionEl.textContent = `Edition: ${formatEditionName(data.edition)}`;
       if (dlButtonEl) {
         dlButtonEl.innerHTML =
           `<a href="${data.url}" class="notLink"><button class="btn">Download</button></a>`;
