@@ -274,6 +274,20 @@ select:focus {
   const app = initializeApp(firebaseConfig);
   const db = getFirestore(app);
 
+    function formatEditionName(edition) {
+    if (!edition) return "";
+
+    // Convert "home-office" → ["home", "office"]
+    const parts = edition.split("-");
+
+    // Capitalize each word
+    const formatted = parts
+        .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+        .join(" ");
+
+    return formatted;
+}
+    
   // ----------------------
   // Fetch User License
   // ----------------------
@@ -289,7 +303,7 @@ select:focus {
     if (snap.exists()) {
       const data = snap.data();
       const keyEl = document.getElementById("key");
-      const editionEl = document.getElementById("edition");
+      const editionEl = formatEditionName(document.getElementById("edition"));
       const dlButtonEl = document.getElementById("dlButton");
 
       if (keyEl) keyEl.textContent = `Product Key: ${data.key}`;
