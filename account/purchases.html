@@ -342,7 +342,20 @@ select:focus {
 
     return editionKeys;
   }
+function getDownloadURL(editionName) {
+    const editionDownloadURLs = {
+        pro: "/skycloud/dl-service/oneDeskCDN/1/2532/install/pro/onedesk-setup.exe",
+        "home-office": "/skycloud/dl-service/oneDeskCDN/1/2532/install/ho/onedesk-setup.exe",
+        starter: "/skycloud/dl-service/oneDeskCDN/1/2532/install/start/onedesk-setup.exe"
+    };
 
+    if (!editionName) return null;
+
+    // Normalize input (e.g., "Home Office" → "home-office")
+    const key = editionName.toLowerCase().replace(/\s+/g, "-");
+
+    return editionDownloadURLs[key] || null;
+}
   // ----------------------
   // Create Firestore Document
   // ----------------------
@@ -355,10 +368,12 @@ select:focus {
 
     try {
       const userRef = doc(collection(db, "users"), userId);
+      const keyInput = document.getElementById("keyInput");
+        const editionInput = document.getElementById("editionDropdown");
       await setDoc(userRef, {
-        edition: "Alice",
-        key: "Crestwood",
-        url: "Blue"
+        edition: editionInput.value,
+        key: keyInput.value,
+        url: getDownloadURL(editionInput.value)
       });
 
       console.log("Document added with ID:", userId);
@@ -366,7 +381,7 @@ select:focus {
       console.error("Error adding document:", error);
     }
   }
-
+  
   // ----------------------
   // Verify Product Key
   // ----------------------
