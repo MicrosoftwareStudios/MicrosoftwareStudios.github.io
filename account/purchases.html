@@ -209,6 +209,7 @@ select:focus {
                 </div>
                 <input id="keyInput" type="text" placeholder="XXXXX-XXXXX-XXXXX-XXXXX-XXXXX"></input>
                 <div class="download"><button class="btn" id="submit">Link Key</button></div>
+                <div><p id="statusLabel"></p></div>
             </div>
         </div>
     </div>
@@ -382,6 +383,7 @@ function getDownloadURL(editionName) {
       const userRef = doc(collection(db, "users"), userId);
       const keyInput = document.getElementById("keyInput");
         const editionInput = document.getElementById("editionDropdown");
+      const statusMessage = document.getElementById("statusLabel");
       await setDoc(userRef, {
         edition: editionInput.value,
         key: keyInput.value,
@@ -389,8 +391,10 @@ function getDownloadURL(editionName) {
       });
 
       console.log("Document added with ID:", userId);
+      statusMessage.textContent = "Key successfully linked!";
     } catch (error) {
       console.error("Error adding document:", error);
+      statusMessage.textContent = "Something went wrong. Please try again later.";
     }
   }
   
