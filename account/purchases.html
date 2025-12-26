@@ -354,11 +354,11 @@ select:focus {
     }
 
     try {
-      const userRef = doc(collection(db, "myCollection"), userId);
+      const userRef = doc(collection(db, "users"), userId);
       await setDoc(userRef, {
-        name: "Alice",
-        city: "Crestwood",
-        favoriteColor: "Blue"
+        edition: "Alice",
+        key: "Crestwood",
+        url: "Blue"
       });
 
       console.log("Document added with ID:", userId);
