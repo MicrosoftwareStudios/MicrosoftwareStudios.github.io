@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="/styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f3f3f3;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        .head {
+            display: flex;
+            align-items: center;
+            background-color: #0078D4;
+            color: white;
+            padding: 15px 30px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .home-button {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 20px;
+            cursor: pointer;
+            margin-right: 15px;
+        }
+
+        .home-button i {
+            margin-right: 5px;
+        }
+
+        .home-button:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            display: flex;
+            flex: 1;
+        }
+
+        .sidebar {
+            width: 250px;
+            background: white;
+            padding: 20px;
+            box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            position: relative;
+        }
+
+        .sidebar a {
+            display: flex;
+            align-items: center;
+            color: #0078D4;
+            text-decoration: none;
+            font-size: 16px;
+            padding: 10px 0;
+        }
+
+        .sidebar a i {
+            margin-right: 10px;
+        }
+
+        .sidebar a:hover {
+            text-decoration: underline;
+        }
+
+        .sidebar-footer {
+            padding-top: 20px;
+            text-align: center;
+            font-size: 14px;
+            color: #777;
+            margin-top: auto;
+        }
+
+        .main-content {
+            flex: 1;
+            padding: 30px;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .card-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .card-desc {
+            font-size: 14px;
+            color: #555;
+        }
+        .notLink {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="head">
+        <button class="home-button" onclick="window.location.href='/index.html'">
+            <i class="fas fa-home"></i>
+        </button>
+        Account
+        <div class="search-area">
+            <button class="btn" onclick="deleteCookie('staySignedIn')">Sign Out</button>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="sidebar">
+            <a href="dashboard.html"><i class="fas fa-user"></i> Profile</a>
+            <a href="#"><i class="fas fa-shield-alt"></i> Security</a>
+            <a href="#"><i class="fas fa-laptop"></i> Devices</a>
+            <a href="purchases.html"><i class="fas fa-credit-card"></i> My Purchases</a>
+            <a href="#"><i class="fas fa-user-secret"></i> Privacy Settings</a>
+            <div class="sidebar-footer">
+                © 2025 Microsoftware
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div class="card">
+                <div class="card-title">Sign-in</div>
+                <div class="card-desc">Manage your personal details and sign-in settings.</div>
+            </div>
+          <div class="card">
+              <div class="card-title">Password</div>
+              <div class="card-desc">
+                <a class="notlink" href="resetpassword.html"><button class="btn">Reset Password</button></a>
+              </div>
+          </div>
+        </div>
+    </div>
+    <script>
+        function deleteCookie(cookieName) {
+            document.cookie = cookieName + "=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+            window.location.href = "/index.html";
+        }
+    </script>
+</body>
+</html>
