@@ -138,13 +138,14 @@
 
         <div class="main-content">
             <div class="card">
-                <div class="card-title">Sign-in</div>
+                <div class="card-title">Profile/Sign-in</div>
                 <div class="card-desc">Manage your personal details and sign-in settings.</div>
             </div>
           <div class="card">
               <div class="card-title">Password</div>
               <div class="card-desc">
-                <a class="notlink" href="resetpassword.html"><button class="btn">Reset Password</button></a>
+                <a class="notlink" href="passwordreset.html"><button class="btn">Reset/Change Password</button></a><br>
+                <button class="btn" onclick="deleteCookie('staySignedIn')">Sign out</button>
               </div>
           </div>
         </div>
@@ -152,7 +153,7 @@
     <script>
         function deleteCookie(cookieName) {
             document.cookie = cookieName + "=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
-            window.location.href = "/index.html";
+            window.location.href = "/";
         }
     </script>
 </body>
