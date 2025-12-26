@@ -113,9 +113,9 @@
     <script>
         async function fetchKeys() {
             const editions = {
-                "/skycloud/cloudauth/odLicReg.dat": { name: "Home Office Edition", link: "/skycloud/dl-service/oneDeskCDN/2532/1/install/ho/onedesk-setup.exe" },
-                "/skycloud/cloudauth/odProLicReg.dat": { name: "Pro", link: "/skycloud/dl-service/oneDeskCDN/2532/1/install/pro/onedesk-setup.exe" },
-                "/skycloud/cloudauth/odStartLicReg.dat": { name: "Starter Edition", link: "/skycloud/dl-service/oneDeskCDN/2532/1/install/start/onedesk-setup.exe" }
+                "/skycloud/cloudauth/odLicReg.dat": { name: "Home Office Edition", link: "/skycloud/dl-service/oneDeskCDN/1/2532/install/ho/onedesk-setup.exe" },
+                "/skycloud/cloudauth/odProLicReg.dat": { name: "Pro", link: "/skycloud/dl-service/oneDeskCDN/1/2532/install/pro/onedesk-setup.exe" },
+                "/skycloud/cloudauth/odStartLicReg.dat": { name: "Starter Edition", link: "/skycloud/dl-service/oneDeskCDN/1/2532/install/start/onedesk-setup.exe" }
             };
 
             let editionKeys = {};
@@ -145,7 +145,7 @@
 					if (enteredKey === "") {
 						messageDiv.textContent = "IMPORTANT: Without a product key, you will only be able to access a 7-day free trial.";
 						editionDiv.textContent = "OneDesk 2025 Starter Edition";
-						downloadLinkDiv.innerHTML = `<a href="/skycloud/dl-service/oneDeskCDN/2532/1/install/start/onedesk-setup.exe"><button class="btn">Download</button></a>`;
+						downloadLinkDiv.innerHTML = `<a href="/skycloud/dl-service/oneDeskCDN/1/2532/install/start/onedesk-setup.exe"><button class="btn">Download</button></a>`;
 					}
                     return;
                 }
@@ -158,3 +158,4 @@
     </script>
 </body>
 </html>
+
