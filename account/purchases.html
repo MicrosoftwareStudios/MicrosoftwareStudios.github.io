@@ -275,17 +275,15 @@ select:focus {
   const db = getFirestore(app);
 
     function formatEditionName(edition) {
-    if (!edition) return "";
+    // If edition is missing, null, or not a string → return empty string
+    if (typeof edition !== "string") return "";
 
-    // Convert "home-office" → ["home", "office"]
-    const parts = edition.split("-");
-
-    // Capitalize each word
-    const formatted = parts
-        .map(word => word.charAt(0).toUpperCase() + word.slice(1))
-        .join(" ");
-
-    return formatted;
+    return edition
+        .split("-")                     // "home-office" → ["home", "office"]
+        .map(word => 
+            word.charAt(0).toUpperCase() + word.slice(1).toLowerCase()
+        )                               // ["Home", "Office"]
+        .join(" ");                     // "Home Office"
 }
     
   // ----------------------
