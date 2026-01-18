@@ -126,82 +126,106 @@
     </app>
     <app>
         <name>Store</name>
-        <category> -</category>
+        <category>-</category>
         <icon>https://microsoftwarestudios.github.io/winstore/appRes/store/StoreLogo.png</icon>
-        <description>Coming Soon!</description>
-        <install></install>
-        <publisher>Coming soon...
+        <description>Coming Soon<description>
+        <install>https://microsoftwarestudios.github.io/winstore/install/store.ps1</install>
+        <publisher>Coming soon...</publisher>
     </app>
     <app>
         <name>Store</name>
-        <category> -</category>
+        <category>-</category>
         <icon>https://microsoftwarestudios.github.io/winstore/appRes/store/StoreLogo.png</icon>
-        <description>Coming Soon!</description>
-        <install></install>
-        <publisher>Coming soon...
+        <description>Coming Soon<description>
+        <install>https://microsoftwarestudios.github.io/winstore/install/store.ps1</install>
+        <publisher>Coming soon...</publisher>
     </app>
     <app>
         <name>Store</name>
-        <category> -</category>
+        <category>-</category>
         <icon>https://microsoftwarestudios.github.io/winstore/appRes/store/StoreLogo.png</icon>
-        <description>Coming Soon!</description>
-        <install></install>
-        <publisher>Coming soon...
+        <description>Coming Soon<description>
+        <install>https://microsoftwarestudios.github.io/winstore/install/store.ps1</install>
+        <publisher>Coming soon...</publisher>
     </app>
     <app>
         <name>Store</name>
-        <category> -</category>
+        <category>-</category>
         <icon>https://microsoftwarestudios.github.io/winstore/appRes/store/StoreLogo.png</icon>
-        <description>Coming Soon!</description>
-        <install></install>
-        <publisher>Coming soon...
+        <description>Coming Soon<description>
+        <install>https://microsoftwarestudios.github.io/winstore/install/store.ps1</install>
+        <publisher>Coming soon...</publisher>
     </app>
     <app>
         <name>Store</name>
-        <category> -</category>
+        <category>-</category>
         <icon>https://microsoftwarestudios.github.io/winstore/appRes/store/StoreLogo.png</icon>
-        <description>Coming Soon!</description>
-        <install></install>
-        <publisher>Coming soon...
+        <description>Coming Soon<description>
+        <install>https://microsoftwarestudios.github.io/winstore/install/store.ps1</install>
+        <publisher>Coming soon...</publisher>
     </app>
     <app>
         <name>Store</name>
-        <category> -</category>
+        <category>-</category>
         <icon>https://microsoftwarestudios.github.io/winstore/appRes/store/StoreLogo.png</icon>
-        <description>Coming Soon!</description>
-        <install></install>
-        <publisher>Coming soon...
+        <description>Coming Soon<description>
+        <install>https://microsoftwarestudios.github.io/winstore/install/store.ps1</install>
+        <publisher>Coming soon...</publisher>
     </app>
     <app>
         <name>Store</name>
-        <category> -</category>
+        <category>-</category>
         <icon>https://microsoftwarestudios.github.io/winstore/appRes/store/StoreLogo.png</icon>
-        <description>Coming Soon!</description>
-        <install></install>
-        <publisher>Coming soon...
+        <description>Coming Soon<description>
+        <install>https://microsoftwarestudios.github.io/winstore/install/store.ps1</install>
+        <publisher>Coming soon...</publisher>
     </app>
     <app>
         <name>Store</name>
-        <category> -</category>
+        <category>-</category>
         <icon>https://microsoftwarestudios.github.io/winstore/appRes/store/StoreLogo.png</icon>
-        <description>Coming Soon!</description>
-        <install></install>
-        <publisher>Coming soon...
+        <description>Coming Soon<description>
+        <install>https://microsoftwarestudios.github.io/winstore/install/store.ps1</install>
+        <publisher>Coming soon...</publisher>
     </app>
     <app>
         <name>Store</name>
-        <category> -</category>
+        <category>-</category>
         <icon>https://microsoftwarestudios.github.io/winstore/appRes/store/StoreLogo.png</icon>
-        <description>Coming Soon!</description>
-        <install></install>
-        <publisher>Coming soon...
+        <description>Coming Soon<description>
+        <install>https://microsoftwarestudios.github.io/winstore/install/store.ps1</install>
+        <publisher>Coming soon...</publisher>
     </app>
     <app>
         <name>Store</name>
-        <category> -</category>
+        <category>-</category>
         <icon>https://microsoftwarestudios.github.io/winstore/appRes/store/StoreLogo.png</icon>
-        <description>Coming Soon!</description>
-        <install></install>
-        <publisher>Coming soon...
+        <description>Coming Soon<description>
+        <install>https://microsoftwarestudios.github.io/winstore/install/store.ps1</install>
+        <publisher>Coming soon...</publisher>
     </app>
+    <app>
+        <name>Store</name>
+        <category>-</category>
+        <icon>https://microsoftwarestudios.github.io/winstore/appRes/store/StoreLogo.png</icon>
+        <description>Coming Soon<description>
+        <install>https://microsoftwarestudios.github.io/winstore/install/store.ps1</install>
+        <publisher>Coming soon...</publisher>
+    </app>
+    <app>
+        <name>Store</name>
+        <category>-</category>
+        <icon>https://microsoftwarestudios.github.io/winstore/appRes/store/StoreLogo.png</icon>
+        <description>Coming Soon<description>
+        <install>https://microsoftwarestudios.github.io/winstore/install/store.ps1</install>
+        <publisher>Coming soon...</publisher>
+    </app>
+    <app>
+        <name>Store</name>
+        <category>-</category>
+        <icon>https://microsoftwarestudios.github.io/winstore/appRes/store/StoreLogo.png</icon>
+        <description>Coming Soon<description>
+        <install>https://microsoftwarestudios.github.io/winstore/install/store.ps1</install>
+        <publisher>Coming soon...</publisher>
+    </app>    
 </store>
