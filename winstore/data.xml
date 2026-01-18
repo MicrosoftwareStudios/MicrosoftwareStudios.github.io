@@ -124,4 +124,84 @@
         <install>https://microsoftwarestudios.github.io/winstore/install/wikipedia.ps1</install>
         <publisher>Wikimedia Foundation</publisher>
     </app>
+    <app>
+        <name>Store</name>
+        <category> -</category>
+        <icon>https://microsoftwarestudios.github.io/winstore/appRes/store/StoreLogo.png</icon>
+        <description>Coming Soon!</description>
+        <install></install>
+        <publisher>Coming soon...
+    </app>
+    <app>
+        <name>Store</name>
+        <category> -</category>
+        <icon>https://microsoftwarestudios.github.io/winstore/appRes/store/StoreLogo.png</icon>
+        <description>Coming Soon!</description>
+        <install></install>
+        <publisher>Coming soon...
+    </app>
+    <app>
+        <name>Store</name>
+        <category> -</category>
+        <icon>https://microsoftwarestudios.github.io/winstore/appRes/store/StoreLogo.png</icon>
+        <description>Coming Soon!</description>
+        <install></install>
+        <publisher>Coming soon...
+    </app>
+    <app>
+        <name>Store</name>
+        <category> -</category>
+        <icon>https://microsoftwarestudios.github.io/winstore/appRes/store/StoreLogo.png</icon>
+        <description>Coming Soon!</description>
+        <install></install>
+        <publisher>Coming soon...
+    </app>
+    <app>
+        <name>Store</name>
+        <category> -</category>
+        <icon>https://microsoftwarestudios.github.io/winstore/appRes/store/StoreLogo.png</icon>
+        <description>Coming Soon!</description>
+        <install></install>
+        <publisher>Coming soon...
+    </app>
+    <app>
+        <name>Store</name>
+        <category> -</category>
+        <icon>https://microsoftwarestudios.github.io/winstore/appRes/store/StoreLogo.png</icon>
+        <description>Coming Soon!</description>
+        <install></install>
+        <publisher>Coming soon...
+    </app>
+    <app>
+        <name>Store</name>
+        <category> -</category>
+        <icon>https://microsoftwarestudios.github.io/winstore/appRes/store/StoreLogo.png</icon>
+        <description>Coming Soon!</description>
+        <install></install>
+        <publisher>Coming soon...
+    </app>
+    <app>
+        <name>Store</name>
+        <category> -</category>
+        <icon>https://microsoftwarestudios.github.io/winstore/appRes/store/StoreLogo.png</icon>
+        <description>Coming Soon!</description>
+        <install></install>
+        <publisher>Coming soon...
+    </app>
+    <app>
+        <name>Store</name>
+        <category> -</category>
+        <icon>https://microsoftwarestudios.github.io/winstore/appRes/store/StoreLogo.png</icon>
+        <description>Coming Soon!</description>
+        <install></install>
+        <publisher>Coming soon...
+    </app>
+    <app>
+        <name>Store</name>
+        <category> -</category>
+        <icon>https://microsoftwarestudios.github.io/winstore/appRes/store/StoreLogo.png</icon>
+        <description>Coming Soon!</description>
+        <install></install>
+        <publisher>Coming soon...
+    </app>
 </store>
