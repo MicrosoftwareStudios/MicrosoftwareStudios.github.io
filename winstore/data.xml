@@ -124,7 +124,19 @@
         <install>https://microsoftwarestudios.github.io/winstore/install/wikipedia.ps1</install>
         <publisher>Wikimedia Foundation</publisher>
     </app>
-    
+    <app>
+        <name>Google Chrome</name>
+        <category>Internet</category>
+        <publisher>Google Inc.</publisher>
+        <description>
+            Chrome is a fast, simple, and secure web browser, built for the modern web. Download Chrome and sign in to bring your bookmarks.
+        </description>
+        <features>
+            <feature>Speed - Browser the web fast. Chrome loads web sites and runs application with lightning speed...</feature>
+        </features>
+        <icon>https://microsoftwarestudios.github.io/winstore/appRes/chrome/StoreLogo.png</icon>
+        <install>https://google.com/chrome</install>
+    </app>
     <app>
         <name>Store</name>
         <category></category>
