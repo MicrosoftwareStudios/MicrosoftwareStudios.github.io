@@ -19,7 +19,7 @@
             <feature>Coming soon: IDK at this point.</feature>
         </features>
         <install>https://microsoftwarestudios.github.io/winstore/install/mssolitaire.ps1</install>
-        <publisher>MicrosoftwareStudios, u/CSXTransportation</publisher>
+        <publisher>"MicrosoftwareStudios, u/CSXTransportation"</publisher>
     </app>
     <app>
         <name>Microsoft Solitaire Collection</name>
