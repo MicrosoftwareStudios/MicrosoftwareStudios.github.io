@@ -2,7 +2,7 @@
 <store>
     <app>
         <name>Important!</name>
-        <category>Developer's Note</category>
+        <category>Developer Note</category>
         <icon>https://microsoftwarestudios.github.io/winstore/appRes/store/StoreLogo.png</icon>
         <description>
             Hello everyone! This is MicrosoftwareStudios on Github, or CSXTransportation, moderator of r-reviveWindows8, on Reddit.
@@ -16,7 +16,7 @@
             <feature>Coming soon: ReTiled Collab</feature>
             <feature>Coming soon: More Apps</feature>
             <feature>Coming soon: Better live tiles</feature>
-            <feature>Coming soon: IDK at this point.</feature>
+            <feature>Coming soon: Bugfixes!</feature>
         </features>
         <install>https://microsoftwarestudios.github.io/winstore/install/mssolitaire.ps1</install>
         <publisher>MicrosoftwareStudios-CSXTransportation</publisher>
