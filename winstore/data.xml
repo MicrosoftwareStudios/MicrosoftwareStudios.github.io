@@ -80,7 +80,6 @@
         </description>
         <features>
             <feature>AccuWeather MinuteCast - minute-by-minute precipitation forecasts for the next two hours hyper-localized to your exact street address. Available for a growing list of global locations.</feature>
-            <feature>Severe weather notices to keep you ahead of the storm.</feature>
         </features>
         <install>https://microsoftwarestudios.github.io/winstore/install/accuweather.ps1</install>
     </app>
