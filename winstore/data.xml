@@ -78,7 +78,12 @@
             - A Windows app designed using Microsoft Windows 8.1 Interface with fluid screen resizing to the snap view, and large,
             ]]>
         </description>
-        
+        <features>
+            <feature><![CDATA[AccuWeather MinuteCast - minute-by-minute precipitation forecasts for the next two hours hyper-localized to your exact street address. Available for a growing list of global locations.]]></feature>
+            <feature><![CDATA[Severe weather notices to keep you ahead of the storm.]]></feature>
+            <feature><![CDATA[Large, medium, small, and wide Live Tiles for all your favorite locations. Tiles automatically peek and refresh with current forecasts and weather maps.]]></feature>
+            <feature><![CDATA[Fully interactive, full-screen Bing Maps overlaid with AccuWeather precise weather data, including U.S., Canadian, European, and Japanese radar.]]></feature>
+        </features>
         <install>https://microsoftwarestudios.github.io/winstore/install/accuweather.ps1</install>
     </app>
     <app>
