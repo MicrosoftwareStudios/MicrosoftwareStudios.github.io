@@ -70,16 +70,13 @@
         <category>News and Weather</category>
         <icon>https://microsoftwarestudios.github.io/winstore/appRes/accuweather/StoreLogo.png</icon>
         <publisher>AccuWeather.com</publisher>
-        <description>Every day, more than one billion people around the world rely on the Superior Accuracy of AccuWeather to help them plan their lives, protect their businesses, and get more from their day. AccuWeather for Windows 8 has the very latest in weather news and information, including MinuteCast, the leading minute-by-minute weather forecast that is hyper-localized to your exact street address.
-
-This award winning app is available in 27 languages. We designed it with you in mind because so many decisions are made based on the weather. You get a quick look at current weather conditions for the next five days with an easy swipe to a calendar view of the forecasted conditions for each of the next 25 days.
-
+        <description>Every day, more than one billion people around the world rely on the Superior Accuracy of AccuWeather to help them plan their lives, protect their businesses, and get more from their day. AccuWeather for Windows 8 has the very latest in weather news and information, including MinuteCast, the leading minute-by-minute weather forecast that is hyper-localized to your exact street address. This award winning app is available in 27 languages. We designed it with you in mind because so many decisions are made based on the weather. You get a quick look at current weather conditions for the next five days with an easy swipe to a calendar view of the forecasted conditions for each of the next 25 days.
 You also get
 - Severe weather notices to keep you ahead of the storm.
 - A Windows app designed using Microsoft Windows 8.1 Interface with fluid screen resizing to the snap view, and large,
         </description>
         <features>
-            <feature>AccuWeather MinuteCast – minute-by-minute precipitation forecasts for the next two hours hyper-localized to your exact street address. Available for a growing list of global locations.</feature>
+            <feature>AccuWeather MinuteCast - minute-by-minute precipitation forecasts for the next two hours hyper-localized to your exact street address. Available for a growing list of global locations.</feature>
             <feature>Severe weather notices to keep you ahead of the storm.</feature>
             <feature>Large, medium, small, and wide Live Tiles for all your favorite locations. Tiles automatically peek and refresh with current forecasts and weather maps.</feature>
             <feature>Fully interactive, full-screen Bing Maps overlaid with AccuWeather precise weather data, including U.S., Canadian, European, and Japanese radar.</feature>
