@@ -80,8 +80,6 @@
         </description>
         <features>
             <feature>AccuWeather MinuteCast - minute-by-minute precipitation forecasts for the next two hours hyper-localized to your exact street address. Available for a growing list of global locations.</feature>
-            
-            <feature>Fully interactive, full-scale Bing Maps overlaid with AccuWeather precise weather data, including U.S., Canadian, European, and Japanese radar.</feature>
         </features>
         <install>https://microsoftwarestudios.github.io/winstore/install/accuweather.ps1</install>
     </app>
