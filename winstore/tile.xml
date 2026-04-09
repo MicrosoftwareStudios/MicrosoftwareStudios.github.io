@@ -14,5 +14,11 @@
       <text id="2">Download for free</text>
       <text id="3"></text>
     </binding>
+    <binding template="TileSquare310x310SmallImageAndText01">
+      <image id="1" src="https://microsoftwarestudios.github.io/winstore/appRes/solitaire/StoreLogo.png" />
+      <text id="1">Microsoft Solitaire Collection</text>
+      <text id="2">Play today</text>
+      <text id="3"></text>
+    </binding>
   </visual>
 </tile>
