@@ -115,6 +115,7 @@
     <app>
         <name>Microsoft Minesweeper</name>
         <category>Games</category>
+        <icon>https://microsoftwarestudios.github.io/winstore/appRes/minesweeper/StoreLogo.png</icon>
         <publisher>Microsoft Studios</publisher>
         <description>
             Top 5 Free Game in the Windows Store! Play the classic 
@@ -125,7 +126,6 @@
             Minesweeper is better than ever. Play Daily Challenges, 
             earn medals, and take your game online with Xbox 
             achievements and leaderboards. 
-
         </description>
     </app>
     <app>
