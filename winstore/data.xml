@@ -87,12 +87,12 @@
         <install>https://microsoftwarestudios.github.io/winstore/install/xboxcompanion.ps1</install>
     </app>
     <app>
-        <name>Adobe Acrobat PDF Reader</name>
+        <name>Adobe Reader Touch</name>
         <category>Productivity</category>
         <publisher>Adobe Systems Inc.</publisher>
-        <icon>https://microsoftwarestudios.github.io/winstore/appRes/acrobatreader/StoreLogo.png</icon>
+        <icon>https://microsoftwarestudios.github.io/winstore/appRes/adobe-reader/StoreLogo.png</icon>
         <description>Edit and read PDF Documents with the classic PDF reader from Adobe.</description>
-        <install>https://microsoftwarestudios.github.io/winstore/install/acrobatreader.ps1</install>
+        <install>https://microsoftwarestudios.github.io/winstore/install/adobe-reader.ps1</install>
         <features>
             <feature>Open and view PDFs</feature>
             <feature>Annotate with sticky notes and highlights</feature>
