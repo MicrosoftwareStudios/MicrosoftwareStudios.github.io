@@ -86,11 +86,23 @@
     </app>
     <app>
         <name>Xbox One SmartGlass</name>
-        <category>Games</category>
+        <category>Entertainment</category>
         <icon>https://microsoftwarestudios.github.io/winstore/appRes/xboxcompanion/StoreLogo.png</icon>
         <publisher>Microsoft Corporation</publisher>
-        <description></description>
+        <description>Xbox One SmartGlass is the perfect companion app for your Xbox One, both in your living room and on the go. Connect and control your Xbox One. Stay connected with the games and gamers you like. And add a new dimension to your console entertainment with the mobile device you already own.</description>
         <install>https://microsoftwarestudios.github.io/winstore/install/xboxcompanion.ps1</install>
+        <features>
+            <feature>Navigate your Xbox One console using your device keyboard and touch</feature>
+            <feature>Control your media and set top box with the SmartGlass remote control</feature>
+            <feature>Browse the web on your TV using your mobile device</feature>
+            <feature>Enhance what you are watching or playing with SmartGlass companions</feature>
+            <feature>Increase performance with faster connections and reliability</feature>
+            <feature>Search/browse and pin content to play on your Xbox One console</feature>
+            <feature>Track achievements and get game help while messaging friends and watching game DVR clips</feature>
+            <feature>Change TV channels on your Xbox One through OneGuide on SmartGlass</feature>
+            <feature>Purchase Xbox One games and add-ons</feature>
+            <feature>Browse for recent/popular games and add-ons</feature>
+        </features>
     </app>
     <app>
         <name>Adobe Reader Touch</name>
@@ -113,11 +125,11 @@
         <icon>https://microsoftwarestudios.github.io/winstore/appRes/siena/StoreLogo.png</icon>
         <description>Microsoft Project Siena is a breakthrough technology that enables your business experts, analysts and imagineers to create transformative business apps. With Siena, they can now build custom apps with rich visuals, filled with custom intelligence and functionality, with no programming required. Place some visuals on a canvas, hook them up to your data, then customize how your app looks and works. No programming required. Here are some examples of the kinds of apps people have been building - Apps for consuming information, for example, product catalogs, video-based lesson plans, Apps for on-the-spot decisions, for example, adjusting insurance claims, accessorizing outfits Apps for tasks that involve capturing pictures, audio, handwriting and other real world input. You can use your Siena app immediately or publish to share with your colleagues and customers.</description>
         <features>
-            <feature>Conceptualize, validate and build your app ideas as easily as editing a document</feature>
+            <feature>Conceptualize validate and build your app ideas as easily as editing a document</feature>
             <feature>Connect to corporate data and web services</feature>
-            <feature>Compose rich interactive visuals and media to create custom, unique apps</feature>
+            <feature>Compose rich interactive visuals and media to create custom and unique apps</feature>
             <feature>Add business logic and intelligence using the power of Excel-like expressions</feature>
-            <feature>Use the app yourself, share with colleagues or with the world</feature>
+            <feature>Use the app yourself or share with colleagues or with the world</feature>
         </features>
     </app>
     <app>
