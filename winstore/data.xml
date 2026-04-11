@@ -198,6 +198,7 @@
         </description>
         <publisher>Candy Rufus Games</publisher>
         <features>
+            <feature>Demo version of the game</feature>
             <feature>Massive destructible block world</feature>
             <feature>Crafting and smelting</feature>
             <feature>Unique terrain generation</feature>
