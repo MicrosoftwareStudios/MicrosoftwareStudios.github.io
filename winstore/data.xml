@@ -173,13 +173,18 @@
         <features></features>
     </app>  
     <app>
-        <name>Store</name>
-        <category></category>
-        <icon>https://microsoftwarestudios.github.io/winstore/appRes/store/StoreLogo.png</icon>
-        <description>Coming Soon</description>
-        <install>https://microsoftwarestudios.github.io/winstore/install/store.ps1</install>
-        <publisher>Coming soon</publisher>
-        <features></features>
+        <name>Survivalcraft</name>
+        <category>Games</category>
+        <icon>https://microsoftwarestudios.github.io/winstore/appRes/survivalcraft/StoreLogo.png</icon>
+        <description>Survivalcraft is a Minecraft-like blocky survival game in which you are marooned on an infinite island and must fight to survive.</description>
+        <install>https://microsoftwarestudios.github.io/winstore/install/survivalcraft.ps1</install>
+        <publisher>CandyRufus Games</publisher>
+        <features>
+            <feature>Infinite Worlds</feature>
+            <feature>Many different blocks and items to choose from</feature>
+            <feature>Unique terrain generation</feature>
+            <feature>Lots to explore!</feature>
+        </features>
     </app>  
     <app>
         <name>Store</name>
