@@ -176,11 +176,13 @@
         <name>Survivalcraft</name>
         <category>Games</category>
         <icon>https://microsoftwarestudios.github.io/winstore/appRes/survivalcraft/StoreLogo.png</icon>
-        <description>Survivalcraft is a Minecraft-like blocky survival game in which you are marooned on an infinite island and must fight to survive.</description>
-        <publisher>CandyRufus Games</publisher>
+        <description>
+            You are marooned on the shores of an infinite blocky world. Explore, mine resources, craft tools and weapons, make traps and grow plants. Tailor clothes and hunt animals for food and resources. Build a shelter to survive cold nights and share your worlds online. Ride horses, camels or donkeys and herd cattle to protect them from predators. Blast your way through the rock with explosives. Build complex electric devices. Possibilities are infinite in this long-running sandbox survival and construction game series.
+        </description>
+        <publisher>Candy Rufus Games</publisher>
         <features>
-            <feature>Infinite Worlds</feature>
-            <feature>Many different blocks and items to choose from</feature>
+            <feature>Massive destructible block world</feature>
+            <feature>Crafting and smelting</feature>
             <feature>Unique terrain generation</feature>
             <feature>Lots to explore!</feature>
         </features>
