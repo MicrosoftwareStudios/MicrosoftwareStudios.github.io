@@ -109,13 +109,25 @@
         <category>Productivity</category>
         <publisher>Adobe Systems Inc.</publisher>
         <icon>https://microsoftwarestudios.github.io/winstore/appRes/adobe-reader/StoreLogo.png</icon>
-        <description>Edit and read PDF Documents with the classic PDF reader from Adobe.</description>
+        <description>Adobe Reader is the free, trusted leader for reliably viewing and interacting with PDF documents across platforms and devices. Adobe Reader Touch has been specially designed for the new Windows 8 Touch user interface to give you a great experience working with PDF documents on your Windows 8 Tablet. Adobe Reader Touch works with a keyboard and mouse, but desktop users with keyboard and mouse may prefer to install and use Adobe Reader XI.</description>
         <install>https://microsoftwarestudios.github.io/winstore/install/adobe-reader.ps1</install>
         <features>
-            <feature>Open and view PDFs</feature>
-            <feature>Annotate with sticky notes and highlights</feature>
-            <feature>Fill and sign forms</feature>
-            <feature>Print and share documents</feature>
+            <feature>Quickly open PDF documents from email/web, or anywhere on your device</feature>
+            <feature>Easily find your most recently read documents</feature>
+            <feature>View password-protected PDFs, annotations, and drawing markups</feature>
+            <feature>View and Add Notes to your document</feature>
+            <feature>Highlight/Strikeout/Underline text</feature>
+            <feature>Search text to find specific information</feature>
+            <feature>Select single page or continuous scroll modes</feature>
+            <feature>Easily zoom in on text or images for a closer view</feature>
+            <feature>Go to any page quickly by tapping on the Page Number indicator</feature>
+            <feature>Use bookmarks to jump directly to a section in your PDF document</feature>
+            <feature>Quickly navigate through large documents using the Semantic Zoom thumbnail view</feature>
+            <feature>Tap on links in a PDF to open linked web pages</feature>
+            <feature>Share PDFs with other applications using "Share"</feature>
+            <feature>Email PDFs as attachments</feature>
+            <feature>Print your PDFs from within Reader</feature>
+            <feature>Fill and Save PDF forms</feature>
         </features>
     </app>
     <app>
