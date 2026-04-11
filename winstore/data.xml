@@ -135,7 +135,7 @@
     </app>
     <app>
         <name>Wikipedia</name>
-        <category>Internet</category>
+        <category>Books and Reference</category>
         <icon>https://microsoftwarestudios.github.io/winstore/appRes/wikipedia/Store.png</icon>
         <description>
             Browse, read, and edit Wikipedia articles with the official Wikipedia
@@ -152,7 +152,7 @@
     </app>
     <app>
         <name>Google Chrome</name>
-        <category>Internet</category>
+        <category>Tools</category>
         <publisher>Google Inc.</publisher>
         <description>
             Chrome is a fast, simple, and secure web browser, built for the modern web. Download Chrome and sign in to bring your bookmarks.
