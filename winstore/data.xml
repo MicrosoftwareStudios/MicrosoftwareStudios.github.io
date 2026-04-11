@@ -170,7 +170,16 @@
         <description>THE NEXT GENERATION OF AIR COMBAT GAMING IS HERE! With an extensive single player campaign and a huge set of skirmish modes, the non-stop action will keep you on the edge of your seat! Master over a dozen models of aircraft as you take part in the race for jet fighter domination. CONSOLE QUALITY GAMING! Unparalleled visuals, audio, and special effects including bump mapping, realistic atmospheric effects, volumetric clouds, sun glare, day and night transitions and more! EXPANDED SINGLE-PLAYER MODES! After the campaign, hone your skills with Dogfight Missions, Survival, Free for All, Team Deathmatch, Capture the Flag, and Defend the Base, with new game modes to come in future updates! IMMERSIVE GAMEPLAY! Take off and land on landing strips and aircraft carriers, soar through fully recreated cities with realistic weather, and contend with accurate atmospheric effects with aerial perspective, all from the interactive cockpits of a variety of highly detailed jet aircraft. CUSTOMIZE YOUR GAME AND ELEVATE YOUR SKILLS! Cold Alley is designed for players of all generations and skill levels, whether veteran or novice. Take full control, or leave the flying to the auto-pilot while you fire missiles and issue squadron commands!</description>
         <install>https://microsoftwarestudios.github.io/winstore/install/cold-alley.ps1</install>
         <publisher>Microsoft Studios</publisher>
-        <features></features>
+        <features>
+            <feature>Story driven campaign</feature>
+            <feature>Multiple game modes</feature>
+            <feature>Amazing 3D graphics</feature>
+            <feature>Great collection of planes</feature>
+            <feature>High detailed maps</feature>
+            <feature>Varied gameplay mechanics</feature>
+            <feature>Arcade and simulation controls</feature>
+            <feature>Realistic sound and graphical effects</feature>
+        </features>
     </app>  
     <app>
         <name>Survivalcraft</name>
