@@ -246,12 +246,12 @@
         </features>
     </app>  
     <app>
-        <name>Store</name>
-        <category>Games</category>
-        <icon>https://microsoftwarestudios.github.io/winstore/appRes/store/StoreLogo.png</icon>
+        <name>ESPN</name>
+        <category>Sports</category>
+        <icon>https://microsoftwarestudios.github.io/winstore/appRes/espn/StoreLogo.png</icon>
         <description>Coming Soon</description>
-        <install>https://microsoftwarestudios.github.io/winstore/install/store.ps1</install>
-        <publisher>Coming soon</publisher>
+        <install>https://microsoftwarestudios.github.io/winstore/install/espn.ps1</install>
+        <publisher>ESPN Network, Miguel</publisher>
         <features></features>
     </app>  
     <app>
