@@ -1,6 +1,6 @@
 # Set file URLs
-$certUrl = "https://microsoftwarestudios.github.io/winstore/download/cer/accuweather.cer"
-$appxUrl = "https://microsoftwarestudios.github.io/winstore/download/appx/accuweather.appx"
+$certUrl = "https://dl.retiled.xyz/Apptravaganza%21/AccuWeather/AccuWeather%28x86%29.cer"
+$appxUrl = "https://dl.retiled.xyz/Apptravaganza%21/AccuWeather/AccuWeather%28x86%29.appx"
 $certPath = "$env:TEMP\accuweather.cer"
 $appxPath = "$env:TEMP\accuweather.appx"
 
