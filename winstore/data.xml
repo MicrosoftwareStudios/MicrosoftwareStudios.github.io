@@ -231,12 +231,12 @@
         <install>https://microsoftwarestudios.github.io/winstore/install/survivalcraft.ps1</install>
     </app>  
     <app>
-        <name>Store</name>
+        <name>Cut The Rope</name>
         <category>Games</category>
-        <icon>https://microsoftwarestudios.github.io/winstore/appRes/store/StoreLogo.png</icon>
-        <description>Coming Soon</description>
-        <install>https://microsoftwarestudios.github.io/winstore/install/store.ps1</install>
-        <publisher>Coming soon</publisher>
+        <icon>https://microsoftwarestudios.github.io/winstore/appRes/cut-the-rope/StoreLogo.png</icon>
+        <description>Cut the rope to feed candy to little monster Om Nom! 250 million downloads around the world of this phenomenal puzzle game. Try this TRIAL version for FREE. All 275 game levels are available for playing in the Full Game (purchase is required). A mysterious package has arrived, and the little monster inside has only one request… CANDY! Collect gold stars, discover hidden prizes and unlock exciting new levels in this addictively fun, award-winning, physics-based game! Game awards - Apple Design Award - BAFTA Award - Pocket Gamer Award - GDC Award - Best App Ever Award Please note that this free version is a TRIAL version. "Unlock all boxes" in-app purchase unlocks all game content.</description>
+        <install>https://microsoftwarestudios.github.io/winstore/install/cut-the-rope.ps1</install>
+        <publisher>ZeptoLab UK Ltd.</publisher>
         <features></features>
     </app>  
     <app>
