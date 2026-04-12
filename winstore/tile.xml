@@ -4,9 +4,21 @@
       <image id="1" src="https://microsoftwarestudios.github.io/winstore/appRes/chrome/livetile.png" />
       <text id="1">Download Chrome</text>
     </binding>
+    <binding template="TileWide310x150PeekImage05">
+      <image id="1" src="https://microsoftwarestudios.github.io/winstore/appRes/mahjong/livetile.png" />
+      <text id="1">Microsoft Mahjong</text>
+      <text id="2">Free Games</text>
+    </binding>
     <binding template="TileSquare150x150Text02">
       <text id="1">Chrome</text>
       <text id="2">Download free</text>
+    </binding>
+    <binding template="TileSquare310x310ImageAndTextOverlay03">
+      <image id="1" src="/res/tilelarge_textonlybg.png" />
+      <text id="1">Survivalcraft</text>
+      <text id="2">New to the Store</text>
+      <text id="3">Games</text>
+      <text id="4">Free</text>
     </binding>
     <binding template="TileSquare310x310SmallImageAndText01">
       <image id="1" src="https://microsoftwarestudios.github.io/winstore/appRes/xboxcompanion/StoreLogo.png" />
