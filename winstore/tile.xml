@@ -1,13 +1,14 @@
 <tile>
   <visual version="2">
+    <binding template="TileWide310x150PeekImage05">
+      <image id="1" src="https://microsoftwarestudios.github.io/winstore/appRes/mahjong/livetile.png" />
+      <image id="2" src="https://microsoftwarestudios.github.io/winstore/appRes/mahjong/StoreLogo.png" />
+      <text id="1">Microsoft Mahjong</text>
+      <text id="2">Free Games</text>
+    </binding>
     <binding template="TileWide310x150ImageAndText01">
       <image id="1" src="https://microsoftwarestudios.github.io/winstore/appRes/chrome/livetile.png" />
       <text id="1">Download Chrome</text>
-    </binding>
-    <binding template="TileWide310x150PeekImage05">
-      <image id="1" src="https://microsoftwarestudios.github.io/winstore/appRes/mahjong/livetile.png" />
-      <text id="1">Microsoft Mahjong</text>
-      <text id="2">Free Games</text>
     </binding>
     <binding template="TileSquare150x150Text02">
       <text id="1">Chrome</text>
