@@ -246,13 +246,20 @@
         </features>
     </app>  
     <app>
-        <name>ESPN</name>
+        <name>The ESPN App</name>
         <category>Sports</category>
         <icon>https://microsoftwarestudios.github.io/winstore/appRes/espn/StoreLogo.png</icon>
-        <description>Coming Soon</description>
+        <description>The ESPN app for Windows 8, offered on desktop and tablet, provides sports fans with all the things they love about ESPN in a single place. Get up-to-the-minute scores, news, and analysis for all your favorite teams, leagues, and players. Access rich, in depth content from the leader in sports. Download the ESPN app for Windows 8 for a deeper sports experience than ever before! For a limited time, ESPN Insider content is available for a free in the ESPN App for Windows!</description>
         <install>https://microsoftwarestudios.github.io/winstore/install/espn.ps1</install>
-        <publisher>ESPN Network, Miguel</publisher>
-        <features></features>
+        <publisher>ESPN Inc., Miguel</publisher>
+        <features>
+            <feature>Access a completely personalized experience that syncs with your myESPN account</feature>
+            <feature>Follow breaking news and get real time scoring alerts and updates through live tiles and deep pinning.</feature>
+            <feature>Get expanded game views that provide in-depth game coverage.</feature>
+            <feature>Listen to your favorite ESPN podcasts including Mike and Mike PTI with Michael Wilbon and Tony Kornheiser and The BS Report with Bill Simmons.</feature>
+            <feature>Stay informed with comprehensive editorial content from ESPN The Magazine.</feature>
+            <feature>Share your favorite news and video highlights with your friends!</feature>
+        </features>
     </app>  
     <app>
         <name>Store</name>
