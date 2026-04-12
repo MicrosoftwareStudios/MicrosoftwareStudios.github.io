@@ -8,15 +8,15 @@
             Hello everyone! This is MicrosoftwareStudios on Github, or CSXTransportation, moderator of r-reviveWindows8, on Reddit.
             I just wanted to remind everyone that I am working on this store and it is nowhere near complete. I will continue to develop it,
             but I do have a personal life and I cannot devote much time to this project. I am hoping some interesting new changes will come out of this soon. Thanks for your patience and happy reviving!
-            Note - WSRP update set to release tonight - 4-11-26!
+            Note - WSRP update released 4-11-26!
         </description>
         <features>
             <feature>App lists!</feature>
             <feature>Some working interfaces</feature>
+            <feature>Better Live Tiles!</feature>
             <feature>Coming soon: APPXInstallerSVC</feature>
-            <feature>Coming soon: ReTiled Collab (Maybe))</feature>
+            <feature>ReTiled Collab!</feature>
             <feature>Coming soon: More Apps</feature>
-            <feature>Coming soon: Better live tiles</feature>
             <feature>Coming soon: Bugfixes!</feature>
         </features>
         <install>https://microsoftwarestudios.github.io/winstore/install/mssolitaire.ps1</install>
