@@ -5,14 +5,14 @@
       <text id="1">Download Chrome</text>
     </binding>
     <binding template="TileSquare150x150Text02">
-      <text id="1">Google Chrome</text>
+      <text id="1">Chrome</text>
       <text id="2">Download free</text>
     </binding>
     <binding template="TileSquare310x310SmallImageAndText01">
-      <image id="1" src="https://microsoftwarestudios.github.io/winstore/appRes/chrome/StoreLogo.png" />
-      <text id="1">Google Chrome</text>
-      <text id="2">Download for free</text>
-      <text id="3"></text>
+      <image id="1" src="https://microsoftwarestudios.github.io/winstore/appRes/xboxcompanion/StoreLogo.png" />
+      <text id="1">New to the Store</text>
+      <text id="2">Control your Xbox One from your device with Xbox One SmartGlass</text>
+      <text id="3">Free</text>
     </binding>
     <binding template="TileSquare310x310SmallImageAndText01">
       <image id="1" src="https://microsoftwarestudios.github.io/winstore/appRes/solitaire/StoreLogo.png" />
