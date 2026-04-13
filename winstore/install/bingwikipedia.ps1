@@ -4,8 +4,8 @@
 # Set file URLs
 $certUrl = "https://dl.retiled.xyz/Apptravaganza%21/Bing%20Wikipedia%20Browser/x86/Microsoft.BingWikipediaBrowser_1.0.0.108_x86__8wekyb3d8bbwe.cer"
 $appxUrl = "https://dl.retiled.xyz/Apptravaganza%21/Bing%20Wikipedia%20Browser/x86/Microsoft.BingWikipediaBrowser_1.0.0.108_x86__8wekyb3d8bbwe.appx"
-$certPath = "$env:TEMP\cut-the-rope.cer"
-$appxPath = "$env:TEMP\cut-the-rope.appx"
+$certPath = "$env:TEMP\bingwikipedia.cer"
+$appxPath = "$env:TEMP\bingwikipedia.appx"
 
 # Download Certificate
 Write-Host "Downloading certificate..."
