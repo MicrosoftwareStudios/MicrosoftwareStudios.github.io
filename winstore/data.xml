@@ -281,13 +281,18 @@
         </features>
     </app>  
     <app>
-        <name>Store</name>
-        <category>Games</category>
-        <icon>https://microsoftwarestudios.github.io/winstore/appRes/store/StoreLogo.png</icon>
-        <description>Coming Soon</description>
-        <install>https://microsoftwarestudios.github.io/winstore/install/store.ps1</install>
-        <publisher>Coming soon</publisher>
-        <features></features>
+        <name>Bing Wikipedia Browser</name>
+        <category>Books and Reference</category>
+        <icon>https://microsoftwarestudios.github.io/winstore/appRes/bingwikipedia/StoreLogo.png</icon>
+        <description>Bing Wikipedia Browser by Microsoft combines the content from Wikipedia - the free encyclopedia - with enhanced search, browse, and content recommendations based on the Bing Knowledge repository.</description>
+        <install>https://microsoftwarestudios.github.io/winstore/install/bingwikipedia.ps1</install>
+        <publisher>Microsoft Corporation, migbrunluz (Miguel)</publisher>
+        <features>
+            <feature>Search and browse articles with ease.</feature>
+            <feature>Explore related topics with the recommendation bar.</feature>
+            <feature>Flip through all images in an article in high resolution.</feature>
+            <feature>Share interesting topics with your friends.</feature>
+        </features>
     </app>  
     <app>
         <name>Store</name>
