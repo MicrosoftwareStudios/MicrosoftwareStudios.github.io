@@ -295,13 +295,17 @@
         </features>
     </app>  
     <app>
-        <name>Store</name>
-        <category>Games</category>
-        <icon>https://microsoftwarestudios.github.io/winstore/appRes/store/StoreLogo.png</icon>
-        <description>Coming Soon</description>
-        <install>https://microsoftwarestudios.github.io/winstore/install/store.ps1</install>
-        <publisher>Coming soon</publisher>
-        <features></features>
+        <name>TED Talks</name>
+        <category>Social</category>
+        <icon>https://microsoftwarestudios.github.io/winstore/appRes/tedtalks/StoreLogo.png</icon>
+        <description>This app brings the latest feeds, videos, and twits of TED Talks to you! Hope it is of use to you TED Talks lovers or anyone who is interested!</description>
+        <install>https://microsoftwarestudios.github.io/winstore/install/tedtalks.ps1</install>
+        <publisher>Calvin Apps, migbrunluz (Miguel)</publisher>
+        <features>
+            <feature>Latest news from TED Talks</feature>
+            <feature>Most Recent Uploaded Videos from TED Talks</feature>
+            <feature>Twits from TED Talks</feature>
+        </features>
     </app>  
     <app>
         <name>Store</name>
