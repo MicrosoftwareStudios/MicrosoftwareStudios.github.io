@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <store>
     <app>
-        <name>Important!</name>
-        <category>Developer Note</category>
+        <name>Update the Store</name>
+        <category>URGENT SHUTDOWN NOTICE</category>
         <icon>https://microsoftwarestudios.github.io/winstore/appRes/store/StoreLogo.png</icon>
         <description>
-            Hello everyone! This is MicrosoftwareStudios on Github, or CSXTransportation, moderator of r-reviveWindows8, on Reddit.
-            I just wanted to remind everyone that I am working on this store and it is nowhere near complete. I will continue to develop it,
-            but I do have a personal life and I cannot devote much time to this project. I am hoping some interesting new changes will come out of this soon. Thanks for your patience and happy reviving!
-            Note - WSRP update released 4-11-26!
+            The version of the WSRP Store you are using is old and will be shut down sometime in the future. No new apps will be added to this catalog as the backend for this version is outdated and inefficient and is being replaced with an overhauled one. PLease update now by clicking Install.
         </description>
         <features>
             <feature>App lists!</feature>
@@ -19,7 +16,7 @@
             <feature>Coming soon: More Apps</feature>
             <feature>Coming soon: Bugfixes!</feature>
         </features>
-        <install>https://microsoftwarestudios.github.io/winstore/install/mssolitaire.ps1</install>
+        <install>https://github.com/MicrosoftwareStudios/WSRP-Store</install>
         <publisher>MicrosoftwareStudios-CSXTransportation</publisher>
     </app>
     <app>
