@@ -11,8 +11,8 @@
       <text id="1">Download Chrome</text>
     </binding>
     <binding template="TileSquare150x150Text02">
-      <text id="1">OneNote</text>
-      <text id="2">Download free</text>
+      <text id="1">Update Now!</text>
+      <text id="2">Update out!</text>
     </binding>
     <binding template="TileSquare310x310SmallImageAndText01">
       <image id="1" src="https://microsoftwarestudios.github.io/winstore/appRes/onenote/StoreLogo.png" />
