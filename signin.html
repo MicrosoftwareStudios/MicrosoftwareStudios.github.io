@@ -96,8 +96,10 @@
     window.onload = function() {
 		const { name, image, redirect } = getArgs();
 		var signInProviderData = document.getElementById("signInProviderData");
-		signInProviderData.innerHTML = '<img src="' + image + '">' +
+		if (name) {
+		signInProviderData.innerHTML = '<img src="' + image + '" height=30>' +
 									'<p>' + name + ' wants to access your Microsoftware Account.</p>';
+		}
         if (document.cookie.includes("staySignedIn=true")) {
             window.location.href = "account/dashboard.html"; // Redirect if logged in
         }
