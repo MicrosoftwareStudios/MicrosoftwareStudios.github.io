@@ -82,7 +82,16 @@
 	</div class="links">
         <button class="btn-signin" onclick="signIn()">Sign in</button>
     </div>
-   <script>
+	<script>
+		function getArgs() {
+    		const params = new URLSearchParams(window.location.search);
+
+    		return {
+        		name: params.get("name") || "",
+        		image: params.get("image") || "",
+        		redirect: params.get("redirect") || ""
+    		};
+		}
     // Run the function when the page loads
     window.onload = function() {
 		const { name, image, redirect } = getArgs();
@@ -136,15 +145,6 @@
        	   })
         	.catch(error => alert("Error: " + error.message));
 		};
-		function getArgs() {
-    		const params = new URLSearchParams(window.location.search);
-
-    		return {
-        		name: params.get("name") || "",
-        		image: params.get("image") || "",
-        		redirect: params.get("redirect") || ""
-    		};
-		}
 
     </script>
 </body>
