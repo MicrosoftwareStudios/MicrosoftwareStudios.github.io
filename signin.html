@@ -97,7 +97,7 @@
 		const { name, image, redirect } = getArgs();
 		var signInProviderData = document.getElementById("signInProviderData");
 		if (name != "") {
-		signInProviderData.innerHTML = '<img src="' + image + '" height=30>' +
+		signInProviderData.innerHTML = '<img src="' + image + '" height=50>' +
 									'<p>' + name + ' wants to access your Microsoftware Account.</p>';
 		}
         if (document.cookie.includes("staySignedIn=true")) {
