@@ -72,6 +72,7 @@
     <div class="login-container">
         <img src="resources/images/largeLogo.png" height="30">
         <div class="login-title">Sign in</div>
+		<div id="signInProviderData"></div>
         <input type="email" id="email" placeholder="Email">
         <input type="password" id="password" placeholder="Password">
 	<div>
@@ -84,6 +85,10 @@
    <script>
     // Run the function when the page loads
     window.onload = function() {
+		const { name, image, redirect } = getArgs();
+		var signInProviderData = document.getElementById("signInProviderData");
+		signInProviderData.innerHTML = '<img src="' + image + '">' +
+									'<p>' + name + ' wants to access your Microsoftware Account.</p>';
         if (document.cookie.includes("staySignedIn=true")) {
             window.location.href = "account/dashboard.html"; // Redirect if logged in
         }
@@ -131,6 +136,16 @@
        	   })
         	.catch(error => alert("Error: " + error.message));
 		};
+		function getArgs() {
+    		const params = new URLSearchParams(window.location.search);
+
+    		return {
+        		name: params.get("name") || "",
+        		image: params.get("image") || "",
+        		redirect: params.get("redirect") || ""
+    		};
+		}
+
     </script>
 </body>
 </html>
