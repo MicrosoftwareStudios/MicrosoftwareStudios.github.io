@@ -146,8 +146,10 @@
             	window.location.href = "session-redirect.html";
        	   })
         	.catch(error => {
-    const code = error.code || error.message;
-
+    let raw = error.code || error.message || "";
+    
+    // Remove the "Firebase: Error: (" and ")" wrappers if present
+    raw = raw.replace("Firebase: Error: (", "").replace(").", "");
     const messages = {
         "Firebase: Error (auth/invalid-email).": "That email doesn’t look right.",
         "Firebase: Error (auth/user-not-found).": "No account exists under that email.",
@@ -157,7 +159,7 @@
     };
 
     // fallback message if code isn't in your list
-    const message = messages[code] || "Something went wrong. Please try again.";
+    const message = messages[raw] || "Something went wrong. Please try again.";
 
     alert(message);
 });
