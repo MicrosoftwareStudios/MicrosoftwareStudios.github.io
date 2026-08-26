@@ -151,11 +151,11 @@
     // Remove the "Firebase: Error: (" and ")" wrappers if present
     raw = raw.replace("Firebase: Error: (", "").replace(").", "");
     const messages = {
-        "Firebase: Error (auth/invalid-email).": "That email doesn’t look right.",
-        "Firebase: Error (auth/user-not-found).": "No account exists under that email.",
-        "Firebase: Error (auth/wrong-password).": "Incorrect password.",
-        "Firebase: Error (auth/too-many-requests).": "Too many attempts. Try again later.",
-		"Firebase: Error (auth/user-disabled).": "Your account has been disabled. Please contact customer support."
+        "auth/invalid-email": "That email doesn’t look right.",
+        "auth/user-not-found": "No account exists under that email.",
+        "auth/wrong-password": "Incorrect password.",
+        "auth/too-many-requests": "Too many attempts. Try again later.",
+		"auth/user-disabled": "Your account has been disabled. Please contact customer support."
     };
 
     // fallback message if code isn't in your list
