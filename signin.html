@@ -145,7 +145,24 @@
             	// Redirect to session page
             	window.location.href = "session-redirect.html";
        	   })
-        	.catch(error => alert("Error: " + error.message));
+        	.catch(error => {
+    const code = error.code || error.message;
+
+    const messages = {
+        "Firebase: Error (auth/invalid-email).": "That email doesn’t look right.",
+        "Firebase: Error (auth/user-not-found).": "No account exists under that email.",
+        "Firebase: Error (auth/wrong-password).": "Incorrect password.",
+        "Firebase: Error (auth/too-many-requests).": "Too many attempts. Try again later.",
+        "Firebase: Error (auth/network-request-failed).": "Network issue. Check your connection."
+		"Firebase: Error (auth/user-disabled).": "Your account has been disabled. Please contact customer support."
+    };
+
+    // fallback message if code isn't in your list
+    const message = messages[code] || "Something went wrong. Please try again.";
+
+    alert(message);
+});
+
 		};
 
     </script>
