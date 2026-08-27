@@ -149,7 +149,7 @@
     let raw = error.code || error.message || "";
     
     // Remove the "Firebase: Error: (" and ")" wrappers if present
-    raw = raw.replace("Firebase: Error: (", "").replace(")", "").replace(".", "");
+    raw = raw.replace("Firebase: Error (", "").replace(")", "").replace(".", "");
     const messages = {
         "auth/invalid-email": "That email doesn’t look right.",
         "auth/user-not-found": "No account exists under that email.",
